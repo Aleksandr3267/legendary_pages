@@ -338,7 +338,7 @@ body{
     }
 
     .slider__item_1 {
-      background: url(../img/bg1.png) no-repeat center top / cover;
+      background: url(../img/bg1.jpg) no-repeat center top / cover;
       
     }
 
@@ -729,7 +729,7 @@ button:hover, .focused{
   transition: all 0.5s;
 }
 .war:first-child > .filter-img { 
-  background: url(../img/photo1.png) no-repeat center top / cover;
+  background: url(../img/photo1.jpg) no-repeat center top / cover;
 }
 .war:nth-child(2) > .filter-img{
   background: url(../img/photo2.png) no-repeat center top / cover;
@@ -1182,7 +1182,7 @@ transition: all 0.5s ease;
 /*КОНТЭНТ С КОМПАНИЯМИ*/
 .company_contant{
   margin:165px 0 0 0;
-  background: url(../img/main-page-partners-bg.jpg) no-repeat center top / cover;
+  background: url(../img/mainpagebg.jpg) no-repeat center top / cover;
   padding-top: 140px;
   background-attachment: fixed;
   background-position: 50% 0%;
