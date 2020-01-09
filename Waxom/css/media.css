@@ -1,52 +1,73 @@
-@media(max-width: 1219px){
-	.portfolio-list .grid-item .info:after{
-		top: 66%;
-	}
+/*---------------------------------------------------------------------------*/
+/*убирает 2 картинки сайта*/
+@media(max-width: 1380px) {
+  .ideas .idean img:first-child, .ideas .idean img:last-child{
+    display: none;
+  }
 }
+/**/
+
+
 @media(max-width: 1200px){
+	/*ЛЕНТА*/
 	.wordpresstem{
 		padding-left:20px;
 		padding-right: 20px;
 	}
+	/**/
+	/*ЗАВЕРШАЮЩИЙ БЛОК*/
 	.recent-posts2{
 		padding-left:20px;
 		padding-right: 20px;
 	}
+	/**/
+	/*ПОДВАЛ*/
 	.footer{
 		padding-left: 20px;
 		padding-right: 20px;
 
 	}
-
+	/**/
 }
+
 @media(max-width: 1120px){
-.recent-posts .pageses{
+	/*БЛОК С ПОСТАМИ*/
+	.recent-posts .pageses{
 	display: block;
 
 	}
 	.recent-posts .pageses .pages{
-margin:0 auto;
-}
+	margin:0 auto;
+	
+	}
+	.recent-posts .pageses .pages{
+	margin-top: 50px;
+	}
+	/**/
+	.filteris .row{
+		justify-content: center;
+	}
 }
 @media(max-width: 1024px){
-.MobileDevices{
-	flex-direction: column;
-	text-align: center;
-}
-.mobile_media{
-	display: flex;
-}
-.phone{
-	display: flex;
-	order: 2;
-	margin-top: 40px;
-}
-.text_mobile{
-	display: flex;
-	order: 1;
-	flex-direction: column;
-}
-
+	/*БЛОК С ТЕЛЕФОНОМ*/
+	.MobileDevices{
+		flex-direction: column;
+		text-align: center;
+	}
+	.mobile_media{
+		display: flex;
+	}
+	.phone{
+		display: flex;
+		order: 2;
+		margin-top: 40px;
+	}
+	.text_mobile{
+		display: flex;
+		order: 1;
+		flex-direction: column;
+	}
+	/**/
 }
 @media(max-width: 879px){
 	.portfolio-list .grid-item .info:after{
@@ -72,10 +93,14 @@ margin:0 auto;
 	.postes .post .post-logo{
 		justify-content: center;
 	}
-	.postes .post .post-images img{
+	.postes .post .post-images{
+		display: flex;
 		
-		margin:0 auto;
+		flex-direction: column;
+		align-items: center;
 	}
+	
+	
 	.infomas{
 		flex-direction: column;
 	}
@@ -90,11 +115,13 @@ margin:0 auto;
 	.header-burger{
 		display: block;
 		position: relative;
-		float: right;
-		margin:20px 20px 0 0;
+		/*left: 85%;*/
+		margin:0px 20px 0 0;
 		
 		width: 30px;
 		height: 30px;
+		z-index: 100;
+		order: 2;
 	}
 	.header-burger:before,
 	.header-burger:after{
@@ -148,16 +175,23 @@ margin:0 auto;
 	#main-menu.active{
 		left: 0;
 	}
-	.main-menu-wrap ul{
+
+	.slider .waxom .top_menu nav .menu ul{
 		display: block;
 		float: left;
+		margin:0 0 0 20px;
 	}
-	.main-menu-wrap ul li a{
+	.slider .waxom .top_menu nav .menu ul li a{
 		float: left;
 		font-size: 20px;
 		text-transform: uppercase;
 		margin:20px 0 20px 0;
 	}
+	.slider .waxom .top_menu nav .instrumentary{
+		
+		order: 1;
+	}
+
 }
 @media(max-width: 720px){
 
@@ -197,8 +231,7 @@ margin:0 auto;
 
 }
 @media(max-width: 640px){
-.container3{
-  	 
+	.container3{	 
 	 max-width: 320px;
 	
 	  
@@ -213,51 +246,83 @@ margin:0 auto;
 		
 	}
 }
+@media(max-width: 500px){
+	.oglavline h2{
+		font-size: 11px;
+	}
+	.oglavline h1{
+		font-size: 20px;
+	}
+	.oglavline p{
+		font-size: 7px;
+		line-height: 20px;
+	}
+}
 @media(max-width: 460px){
 	
 }
 @media(max-width: 456px){
-	
 	.phone{
 		width: 290px;
 		height: 420px;
 	}
 	.container3{
-  	 
 	 max-width: 220px;
-	
-	  
+		  
 	}
 }
-@media(max-width: 370px){
+@media(max-width: 400px){
 	.header-burger{
+		position: absolute;
 		margin:80px 20px 0 0 ;
+		left: 85%;
 	}
 	.recent-posts .pageses .pages{
 		
 	}
-	.oglavline h1{
-		font-size: 23px;
-	}
+	
 
 }
 /*height*/
-@media(max-height: 690px){
+@media(max-height: 800px){
 	.oglavline{
-		margin-top: 210px;
+		bottom: 200px;
 	}
-	.INFORMASHN{
-		padding-top: 210px;
-	}
-}
-@media(max-height: 590px){
+}	
+@media(max-height: 640px){
 	.oglavline{
-		margin-top: 150px;
+		bottom: 100px;
 	}
-}
-@media(max-height: 530px){
+}	
+@media(max-height: 510px){
 	.oglavline{
-		margin-top: 80px;
+		bottom: 35px;
+	}
+}	
+@media(max-height: 420px){
+	.oglavline{
+		bottom: 28px;
+	}
+	.oglavline button{
+		margin-top: 20px;
+	}
+	.slider__indicators{
+		bottom: 3px;
+	}
+	
+	
+}	
+@media(max-height: 380px){
+
+.oglavline h2{
+		font-size: 11px;
+	}
+	.oglavline h1{
+		font-size: 20px;
+	}
+	.oglavline p{
+		font-size: 7px;
+		line-height: 20px;
 	}
 }
 /*end_height*/

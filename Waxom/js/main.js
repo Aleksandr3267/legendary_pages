@@ -1,11 +1,15 @@
+
 // burger
 $(document).ready(function() {
   $('.header-burger').click(function(event) {
-    $('.header-burger,#main-menu').toggleClass('active');
+    $('.header-burger, #main-menu').toggleClass('active');
     $('body').toggleClass('lock');
   });
 });
-// end burger
+// 
+// --------------------------------------------------------------------------
+
+// slider
 'use strict';
     var slider = (function (config) {
 
@@ -22,7 +26,7 @@ $(document).ready(function() {
       var
         _isSliding = false, // индикация процесса смены слайда
         _interval = 0, // числовой идентификатор таймера
-        _transitionDuration = 400, // длительность перехода
+        _transitionDuration = 700, // длительность перехода
         _slider = {}, // DOM элемент слайдера
         _items = {}, // .slider-item (массив слайдов) 
         _sliderIndicators = {}, // [data-slide-to] (индикаторы)
@@ -184,16 +188,186 @@ $(document).ready(function() {
       }
     }({
       selector: '.slider',
-      isCycling: true,
+      isCycling: false,
       direction: 'next',
-      interval: 10000,
+      interval: 5000,
       pause: true
     }));
+// end_slider
+// --------------------------------------------------------------------------
+
+// filters
+// focused
+// $(document).ready(function() {
+//  $('.button[filter]').click(function() {
+
+//     if($(this).attr('filter')=='all') {
+//        if($(this).attr('val')=='off') {
+//         $('.button[filter]').attr('val', 'off');
+//         $(this).attr('val', 'on');
+//         $('.button[filter]').removeClass('focused');
+//         $(this).addClass('focused');
+//         $('.filter > div').show(300);
+//        }
+//     } else
+//     if($(this).attr('val')=='off') {
+//         $('.button[filter]').attr('val', 'off');
+//         $(this).attr('val', 'on');
+//         $('.button[filter]').removeClass('focused');
+//         $(this).addClass('focused');
+//         $('.filter > div').hide(300);
+//         var filter = $(this).attr('filter');
+//         $('.filter > div[filter='+filter+']').show(300);
+//     }
+//   })
+// })
+  // end_focused
+  
+$(document).ready(function() {
 
 
 
 
+    $('.button[filter="all"]').addClass('focused')
 
+  // all
+    $('.button[filter="all"]').click(function ready() {
+    
+
+    if($(this).attr('val')=='off') {
+    $('.button[filter]').attr('val', 'off');
+    $(this).attr('val', 'on');
+     
+    
+
+      
+        
+
+         $('.button[filter]').removeClass('focused');
+         $(this).addClass('focused');
+     
+
+    $('.filter > div').show(500);
+
+    }
+  });
+  // end_all
+  // button1
+  $('.button[filter="wd"]').click(function() {
+    
+    if($(this).attr('val')=='off') {
+    $('.button[filter]').attr('val', 'off');
+    $(this).attr('val', 'on');
+
+    $('.button[filter]').removeClass('focused');
+    $(this).addClass('focused');
+    
+    $('.filter > div').hide(300);
+    $('.filter > div[filter="wd"], [filter="moc"]:nth-child(5), [filter="ud"]:last-child').show(500);
+    }
+  });
+  // end_button1
+  // button2
+  $('.button[filter="ud"]').click(function() {
+    
+    if($(this).attr('val')=='off') {
+    $('.button[filter]').attr('val', 'off');
+    $(this).attr('val', 'on');
+
+    $('.button[filter]').removeClass('focused');
+    $(this).addClass('focused');
+    
+    $('.filter > div').hide(300);
+    $('.filter > div[filter="wd"], [filter="mob"]:nth-child(3), [filter="moc"]:nth-child(5)').show(500);
+    }
+  });
+  // end_button2
+  // button3
+  $('.button[filter="moc"]').click(function() {
+    
+    if($(this).attr('val')=='off') {
+    $('.button[filter]').attr('val', 'off');
+    $(this).attr('val', 'on');
+
+    $('.button[filter]').removeClass('focused');
+    $(this).addClass('focused');
+    
+    $('.filter > div').hide(300);
+    $('.filter > div[filter="ud"]:nth-child(2), [filter="mob"]:nth-child(3), [filter="mob"]:nth-child(4), [filter="moc"]:nth-child(5)').show(500);
+    }
+  });
+  // end_button3
+  // button4 
+  $('.button[filter="mob"]').click(function() {
+    
+    if($(this).attr('val')=='off') {
+    $('.button[filter]').attr('val', 'off');
+    $(this).attr('val', 'on');
+
+    $('.button[filter]').removeClass('focused');
+    $(this).addClass('focused');
+    
+    $('.filter > div').hide(300);
+    $('.filter > div[filter="mob"]:nth-child(3), [filter="mob"]:nth-child(4), [filter="moc"]:nth-child(5), [filter="ud"]:last-child').show(500);
+    }
+  });
+  // 
+});
+// 
+// --------------------------------------------------------------------------
+// video
+
+
+
+$(document).on('click', '.play_video', function() {
+  var $video = $('#video'),
+    src = $video.attr('src');
+ 
+  $video.attr('src', src + '&autoplay=1');
+
+  $('iframe').show(300);
+  $('.overflow, .contant_on_video').hide(200);
+});
+// 
+// --------------------------------------------------------------------------
+// numbers
+var time = 2, cc = 1;
+$(window).scroll(function() {
+$('#counter').each(function(){
+  var
+  cPos = $(this).offset().top,
+  topWindow = $(window).scrollTop();
+  if (cPos < topWindow + 400) {
+    if (cc < 2) {
+      $('.number').addClass('viz');
+        $('div').each(function(){
+          var 
+          i = 1,
+          num = $(this).data('num'),
+          step = 1000 * time / num,
+          that = $(this),
+          int = setInterval(function(){
+            if (i <= num) {
+              that.html(i);
+            }
+            else {
+              cc = cc + 2;
+              clearInterval(int);
+            }
+            i++;
+          },step);
+        });
+      }
+    }
+  });
+});
+// 
+// --------------------------------------------------------------------------
+// СКРИПТ К СЛАЙДЕРУ КОМПАНИЙ
+const mySiema = new Siema({
+  loop: true
+});
+//
 
 
 
