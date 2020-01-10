@@ -24,22 +24,7 @@ img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 /*--------------------------------*/
 
-/*scrollbar*/
-::-webkit-scrollbar {
-  width: 10px;
 
-}
-::-webkit-scrollbar-track {
- background: rgba(0,0,0,0.1);
-
-}
-::-webkit-scrollbar-thumb {
- background:#c7b299;
- border-radius: 5px;
- 
-}
-/**/
-/*-------------------------------------------------------------------*/
 body{
 	font-family: Arial, sans-serif;	
 }
