@@ -20,22 +20,7 @@ body{
 
  /* background: black;*/
 }
-/*scrollbar*/
-::-webkit-scrollbar {
-  width: 10px;
 
-}
-::-webkit-scrollbar-track {
- background: rgba(0,0,0,0.1);
-
-}
-::-webkit-scrollbar-thumb {
- background:#c7b299;
- border-radius: 5px;
- 
-}
-/**/
-/*-------------------------------------------------------------------*/
 .clearfix:after {
 	content:""; 
 	display: table;
