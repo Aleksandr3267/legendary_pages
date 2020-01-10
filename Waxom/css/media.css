@@ -1,4 +1,3 @@
-/*---------------------------------------------------------------------------*/
 /*убирает 2 картинки сайта*/
 @media(max-width: 1380px) {
   .ideas .idean img:first-child, .ideas .idean img:last-child{
@@ -6,8 +5,6 @@
   }
 }
 /**/
-
-
 @media(max-width: 1200px){
 	/*ЛЕНТА*/
 	.wordpresstem{
@@ -78,14 +75,25 @@
 		border-right: 15px solid transparent;
 		border-bottom: 10px solid #fbfaf8;
 	}
-	.container3{
-  	 
-	 max-width: 500px;
 	
-	  
-	}
 }
 @media(max-width: 860px){
+	
+	.infomas{
+		flex-direction: column;
+	}
+	.infomas .info{
+		margin-top: 30px;
+	}
+	/*СЧЁТЫ*/
+	.nambers_informs .numbers_contant{
+		flex-direction: column;
+	}
+	.nambers_informs .numbers_contant .numbers_text{
+		margin:60px 0 0 0;
+	}
+	/**/
+	/*ПОСТЫ*/
 	.postes{
 		display: block;
 		text-align: center;
@@ -99,14 +107,18 @@
 		flex-direction: column;
 		align-items: center;
 	}
-	
-	
-	.infomas{
-		flex-direction: column;
+	/**/
+	/*КОМПАНИИ*/
+	.company {
+	  width: 100%;
+	  margin: 0 auto;
+	  text-align: center;
 	}
-	.infomas .info{
-		margin-top: 30px;
+	.company img{
+		width: 20%;
+		 margin: 20px 40px 0 40px;
 	}
+	/**/
 }
 @media(max-width: 800px){
 	body.lock{
@@ -176,18 +188,18 @@
 		left: 0;
 	}
 
-	.slider .waxom .top_menu nav .menu ul{
+	.slider .top_menu nav .menu ul{
 		display: block;
 		float: left;
 		margin:0 0 0 20px;
 	}
-	.slider .waxom .top_menu nav .menu ul li a{
+	.slider .top_menu nav .menu ul li a{
 		float: left;
 		font-size: 20px;
 		text-transform: uppercase;
 		margin:20px 0 20px 0;
 	}
-	.slider .waxom .top_menu nav .instrumentary{
+	.slider .top_menu nav .instrumentary{
 		
 		order: 1;
 	}
@@ -230,15 +242,11 @@
 	}
 
 }
-@media(max-width: 640px){
-	.container3{	 
-	 max-width: 320px;
-	
-	  
-	}
-}
+
 @media(max-width: 567px){
-	
+	button[filter]{
+		margin-top: 25px;
+	}
 }
 @media(max-width: 537px){
 	.oglavline p{
@@ -258,71 +266,77 @@
 		line-height: 20px;
 	}
 }
-@media(max-width: 460px){
-	
-}
 @media(max-width: 456px){
 	.phone{
 		width: 290px;
 		height: 420px;
 	}
-	.container3{
-	 max-width: 220px;
-		  
-	}
 }
+
 @media(max-width: 400px){
 	.header-burger{
 		position: absolute;
 		margin:80px 20px 0 0 ;
 		left: 85%;
 	}
-	.recent-posts .pageses .pages{
-		
-	}
 	
 
 }
+/*----------------------------------------------------------------------*/
 /*height*/
 @media(max-height: 800px){
-	.oglavline{
-		bottom: 200px;
-	}
+	
 }	
 @media(max-height: 640px){
 	.oglavline{
-		bottom: 100px;
+		top: 16%;
 	}
 }	
 @media(max-height: 510px){
 	.oglavline{
-		bottom: 35px;
+		top: 10%;
 	}
 }	
-@media(max-height: 420px){
-	.oglavline{
-		bottom: 28px;
-	}
-	.oglavline button{
+@media(max-height: 470px){
+	.oglavline .oglav_button{
 		margin-top: 20px;
 	}
 	.slider__indicators{
 		bottom: 3px;
 	}
 	
-	
-}	
-@media(max-height: 380px){
+	.oglavline h2{
+		font-size: 20px;
+	}
+	.oglavline h1{
+		font-size: 30px;
+	}
+	.oglavline p{
+		font-size: 14px;
+		line-height: 20px;
+	}
+}
 
-.oglavline h2{
-		font-size: 11px;
+@media(max-height: 380px){
+	.oglavline{
+		top: 7%;
+	}
+	.oglavline .oglav_button{
+		margin-top: 10px;
+	}
+	.slider__indicators{
+		bottom: 3px;
+	}
+	
+	.oglavline h2{
+		font-size: 15px;
 	}
 	.oglavline h1{
 		font-size: 20px;
 	}
 	.oglavline p{
-		font-size: 7px;
-		line-height: 20px;
+		font-size: 10px;
+		line-height: 15px;
 	}
 }
 /*end_height*/

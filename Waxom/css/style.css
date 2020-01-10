@@ -14,13 +14,10 @@ a:hover{text-decoration: none;}
 ul li{list-style: none;}
 img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
-/*--------------------*/
+/*--------------------------------*/
 body{
 	font-family: Arial, sans-serif;	
-
- /* background: black;*/
 }
-
 .clearfix:after {
 	content:""; 
 	display: table;
@@ -41,28 +38,12 @@ body{
   margin:0 auto;
   display: block;
 }
-.container3{
-   width: 100%;
-  max-width: 700px;
-  margin:0 auto;
-  display: flex;
-  justify-content: center;
-}
 /*-------------------------------------------------------------------------*/
 .header{
   
 }
-.slider .waxom{
- 
-}
-.slider .waxom .top_menu{
-  margin:0 auto;
-  text-align: center;
-  position: relative;
-  z-index: 100;
-}
-/*меню*/
-.slider .waxom .top_menu nav{
+/*НАВИГАЦИЯ*/
+.slider .top_menu nav{
   display: flex;
  align-items: center;
  justify-content: space-between;
@@ -71,11 +52,11 @@ body{
 } 
 
 /*logo*/
-.slider .waxom .top_menu nav .top_logo{
+.slider .top_menu nav .top_logo{
   display: flex;
   align-items: center;
 }
-.slider .waxom .top_menu nav .top_logo a{
+.slider .top_menu nav .top_logo a{
   color: white;
   font-family:Raleway, sans-serif ;
   font-weight: normal;
@@ -85,41 +66,94 @@ body{
 
 /*end logo*/
 /*menu*/
-.slider .waxom .top_menu nav .menu ul{
+.slider .top_menu nav .menu ul{
   display: flex;
   align-items: center;
 }
-.slider .waxom .top_menu nav .menu ul li a{
+.slider .top_menu nav .menu ul li a{
   margin-left: 2.0em;
   color: white;
   font-size: 14px;
   font-family: Montserrat, sans-serif;
   transition: all 0.5s;
 }
-.slider .waxom .top_menu nav .menu ul li a:hover{
+.slider .top_menu nav .menu ul li a:hover{
   color:  #c7b299;
   transition: all 0.5s;
 }
-.slider .waxom .top_menu nav .instrumentary{
+.slider .top_menu nav .instrumentary{
   display: flex;
   align-items: center;
 }
-.slider .waxom .top_menu nav .instrumentary .inst i{
+.slider .top_menu nav .instrumentary .inst i{
   font-size: 22px;
   color: white;
  
   transition: all 0.5s;
 }
-.slider .waxom .top_menu nav .instrumentary .inst{
+.slider .top_menu nav .instrumentary .inst{
   margin-left: 22px;
 }
-.slider .waxom .top_menu nav .instrumentary .inst i:hover{
+.slider .top_menu nav .instrumentary .inst i:hover{
   color:  #c7b299;
   transition: all 0.5s; 
   cursor: pointer;
 }
-/*end menu*/
-/*конец всего меню*/
+/**/
+/**/
+/*contant*/
+.oglavline{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 30%;
+  justify-content: center;
+}
+.slider .oglavline{
+  text-align: center;
+  color: white;
+  
+}
+.oglavline h2{
+  font-size: 36px;
+  font-weight: 400;
+  font-family: Raleway, sans-serif;
+}
+.oglavline h1{
+  font-size: 52px;
+  font-weight: 700;
+  font-family: "Raleway - Extra Bold", sans-serif;
+  margin-top: 14px;
+}
+.oglavline p{
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  font-family: Montserrat, sans-serif;
+  margin-top: 19px;
+}
+.oglavline .oglav_button{
+  margin-top: 55px;
+}
+.oglavline .oglav_button button{
+  color: white;
+  transition: all 0.5s ease;
+  background-color: #998675;
+  border-radius: 3px;
+  width: 170px;
+  height: 53px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Raleway - Extra Bold", sans-serif;
+  font-size: 14px;
+  z-index: 10;
+  box-shadow: inset 0 -3px 0 #736357;
+}
+.oglavline button:hover{
+  background: #736357;
+  
+}
 
 
 
@@ -212,9 +246,7 @@ body{
     }
 
     .slider__control:hover,
-    .slider__control:focus {
-      
-      
+    .slider__control:focus {  
       transition: all 0.5s;
       opacity: 1.0;
 
@@ -222,15 +254,12 @@ body{
 
     .slider__control_prev {
       left: 0;
-
     }
 
     .slider__control_next {
       right: 0;
-      
-      
+         
     }
-
     .slider__control::before {
       content: '';
       display: inline-block;
@@ -238,33 +267,26 @@ body{
       height: 73px;
       background: transparent no-repeat center center;
       background-size: 100% 100%;
-
     }
 
     .slider__control_prev::before {
-      content: "❮";
-     /* background-image: url(../img/leftpro.png);*/
+      content: "❮";    
       font-size: 80px;
-
       color: white;
     }
 
     .slider__control_next::before {
       content: "❯";
-      font-size: 80px;
-     
+      font-size: 80px;   
       color: white;
-     /* background-image: url(../img/rightpro.png);*/
     }
-
     /* индикаторы слайдера */
 
     .slider__indicators {
       position:absolute;
       right: 0;
       bottom: 10px;
-      left: 0;
-      
+      left: 0;    
       z-index: 15;
       display: flex;
       justify-content: center;
@@ -289,25 +311,23 @@ body{
     }
 
     .slider__indicator::before {
+      content: "";
       position: absolute;
       top: -10px;
       left: 0;
       display: inline-block;
       width: 100%;
       height: 10px;
-
-      content: "";
     }
 
     .slider__indicator::after {
+      content: "";
       position: absolute;
       bottom: -10px;
       left: 0;
       display: inline-block;
       width: 100%;
-      height: 10px;
-      
-      content: "";
+      height: 10px;   
     }
 
     .slider__indicator_active {
@@ -318,37 +338,27 @@ body{
      height: 15px;
      top: -2px;
     }
-    .slider__item {
-     
-    }
-
     .slider__item_1 {
       background: url(../img/bg1.jpg) no-repeat center top / cover;
       
     }
-
     .slider__item_2 {
       background:  url(../img/bg12.jpg) no-repeat center top / cover;
     }
-
     .slider__item_3 {
       background:  url(../img/bg13.jpg) no-repeat center top / cover;
     }
-
     .slider__item_4 {
       background:  url(../img/bg14.jpg) no-repeat center top / cover;
     }
   .slider__item_5 {
       background:  url(../img/bg15.jpg) no-repeat center top / cover;
-    }
-    
+    }   
 
     .slider__item {
       height: 100vh;
       overflow: hidden;
     }
-
-    
 
     .slider__item_title {
       font-size: 2em;
@@ -356,76 +366,23 @@ body{
 
   .header-burger{
     display: none;
-}
+  }
     .oshuva{
-  
-  background: rgba(0,0,0,0.6);
-  width: 100%;
-  height: 100vh;
- position: absolute;
- z-index: 1;
- top: 0px;
- left: 0px;
-}
-/*end_slide*/
-/*contant*/
+    background: rgba(0,0,0,0.6);
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    left: 0px;
+  }
+/**/
 
-
-
-.oglavline{
-  
-  color: white;
-  text-align: center;
-  position:relative;
-  bottom: -300px;
-  
-  z-index: 11;
-}
-.oglavline h2{
-  font-size: 36px;
-  font-weight: 400;
-  font-family: Raleway, sans-serif;
-}
-.oglavline h1{
-  font-size: 52px;
-  font-weight: 700;
-  font-family: "Raleway - Extra Bold", sans-serif;
-  margin-top: 14px;
-}
-.oglavline p{
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 24px;
-  font-family: Montserrat, sans-serif;
-  margin-top: 19px;
-}
-.oglavline .oglav_button{
-  margin-top: 55px;
-}
-.oglavline .oglav_button button{
-  color: white;
-  transition: all 0.5s ease;
-  background-color: #998675;
-  border-radius: 3px;
-  width: 170px;
-  height: 53px;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-family: "Raleway - Extra Bold", sans-serif;
-  font-size: 14px;
-  z-index: 10;
-  box-shadow: inset 0 -3px 0 #736357;
-}
-.oglavline button:hover{
-  background: #736357;
-  
-}
-/*end_contant*/
 /*---------------------------------------------------------------------------*/
 .INFORMASHN{
 	padding-top: 100px;
 	padding-bottom: 80px;
-	/*margin-top: -677px;*/
+	
 }
 .infomas{
 	display: flex;
@@ -500,29 +457,20 @@ h2{
   position: relative;
   max-width: 100%;
   width: 770px;
-
-
 }
 .ideas .idean img:first-child{
 	z-index: 5;
 	left: 40%;
   top: 50px;
-
-
 }
 .ideas .idean img:nth-child(2){
-	z-index: 10;
- 
- 
-  
+	z-index: 10; 
 }
 .ideas .idean img:last-child{
 	z-index: 5;
  right: 40%;
- top: 50px;
-  
+ top: 50px; 
 }
-
 /*---------------------------------------------------------------------------*/
 /*лента*/
 .wordpresstem{
@@ -554,8 +502,7 @@ margin-top: 8px;
 }
 
 .buttons button{
-	color: white;
-	
+	color: white;	
 	background-color: #998675;
 	border-radius: 3px;
 	width: 170px;
@@ -577,8 +524,7 @@ margin-top: 8px;
 /*filter*/
 .filterse{
   display: block;
-  padding: 80px 0 0 0;
-  
+  padding: 80px 0 0 0;  
 }
 .karkas {
   margin:0px auto;
@@ -603,9 +549,6 @@ margin-top: 8px;
   margin:45px 0 0 0;
 }
 
-.karkas .filteris .controls{
-
-}
  button{
   display: inline-block;
   padding: .4em .8em;
@@ -626,7 +569,6 @@ button:hover, .focused{
   background:#998675;
   color: white;
   border: 1px solid rgba(0,0,0,0);
- 
   transition: all 0.5s;
 
 }
@@ -669,9 +611,9 @@ button:hover, .focused{
   width: 350px;
   height: 240px;
   transition: all 0.5s;
- display: flex;
- justify-content: center;
- align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .filter_img_dark i{
   font-size: 25px;
@@ -758,10 +700,6 @@ button:hover, .focused{
 .video_wrap{
   margin:80px 0 0 0;
 }
-.video_wrap .video_progect{
-  
-  
-}
 .video_wrap .video_progect .contant_on_video{
   display: flex;
   position: absolute;
@@ -781,7 +719,6 @@ button:hover, .focused{
   border-radius: 50%;
   display: flex;
   align-items: center;
-
   justify-content: center;
 
 }
@@ -871,7 +808,6 @@ button:hover, .focused{
   font-size: 14px;
   color:#bcaa94;
 }
-
 .video_wrap .video_palayer{
   position: relative;
   width: 100%;
@@ -880,7 +816,6 @@ button:hover, .focused{
   top: 0px;
   z-index: 1;
 }
-
 .overflow{
   background: url(../img/bg2.jpg) no-repeat center top / cover;
   width: 100%;
@@ -902,7 +837,6 @@ button:hover, .focused{
   display: block;
  
 }
-
 .MobileDevices{
   display: flex;
   justify-content: space-around;
@@ -914,7 +848,6 @@ button:hover, .focused{
   width: 100%;
   max-width:366px;
   height: 526px;
-  
   
 }
 .text_mobile h2{
@@ -956,7 +889,7 @@ button:hover, .focused{
   margin-right: 20px;
   border-radius: 50%;
 }
-/*end_mobile*/
+
 /*---------------------------------------------------------------------------*/
 /*numbers*/
 .nambers_informs{
@@ -972,7 +905,6 @@ button:hover, .focused{
   justify-content: center;
   color: white;
   width: 100%;
-  
   
 }
 .nambers_informs .numbers_contant .numbers_text{
@@ -990,7 +922,6 @@ button:hover, .focused{
   font-family: Montserrat, sans-serif;
   font-weight: inherit;
   margin:30px 0 0 0;
-  
   
 }
 .viz{
@@ -1013,13 +944,12 @@ button:hover, .focused{
   border-radius: 2px;
   background: white; 
 }
-/**/
+
 /*---------------------------------------------------------------------------*/
 /*ПОСТЫ*/
 .recent-posts{
 
 }
-
 .recent-posts .oglavline2{
   margin-top: 80px;
   text-align: center;
@@ -1162,11 +1092,11 @@ transition: all 0.5s ease;
   color: white;
   transition: all 0.5s ease;
 }
-/**/
+
 /*---------------------------------------------------------------------------*/
 /*КОНТЭНТ С КОМПАНИЯМИ*/
 .company_contant{
-  margin:165px 0 0 0;
+  margin:150px 0 0 0;
   background: url(../img/mainpagebg.jpg) no-repeat center top / cover;
   padding-top: 140px;
   background-attachment: fixed;
@@ -1177,16 +1107,13 @@ transition: all 0.5s ease;
 }
 .company {
   width: 1110px;
- 
   margin: 0 auto;
 }
-
 .company img {
   width: 20%;
   margin: 0 20px 0 20px;
 
 }
-
 .siema {
   margin: 1rem 0;
 }
@@ -1200,14 +1127,10 @@ transition: all 0.5s ease;
   background:#191919;
 
 }
-.postes{
-  
+.postes{ 
   display: flex;
   padding-top: 80px;
   justify-content: space-between;
-
-}
-.postes .post{
 
 }
 .postes .post .post-logo{
@@ -1239,7 +1162,6 @@ transition: all 0.5s ease;
 color:#c7b299;
 transition: all 0.5s ease;
 }
-
 .postes .post li{
   margin:20px 0 0 0;
   list-style: none;
@@ -1281,7 +1203,6 @@ transition: all 0.5s ease;
 .postes .post .post-images{
   margin:30px 0 0 0;
 }
-
 .postes .post .post-imege{
   display: flex;
   margin:10px 0 0 0;
@@ -1297,7 +1218,6 @@ margin-left: 10px;
   opacity: 0.5;
   transition: all 0.5s ease;
 }
-/**/
 /*---------------------------------------------------------------------------*/
 /*footer*/
 .footer{
