@@ -2,6 +2,10 @@
 *,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
 :focus,:active{outline: none;}
 html, body, div, ul,
+*{
+  margin:0;
+  padding: 0;
+}
 h1, h2, h3,  pre, form, label, input, p,
 blockquote, th, td { margin:0; padding:0 }
 img { border:0 }
@@ -19,6 +23,23 @@ ul li{list-style: none;}
 img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 /*--------------------------------*/
+
+/*scrollbar*/
+::-webkit-scrollbar {
+  width: 10px;
+
+}
+::-webkit-scrollbar-track {
+ background: rgba(0,0,0,0.1);
+
+}
+::-webkit-scrollbar-thumb {
+ background:#c7b299;
+ border-radius: 5px;
+ 
+}
+/**/
+/*-------------------------------------------------------------------*/
 body{
 	font-family: Arial, sans-serif;	
 }

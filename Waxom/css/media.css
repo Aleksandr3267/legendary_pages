@@ -335,4 +335,19 @@
 		margin-top: 10px;
 	}
 }
+@media(max-height: 320px){
+	.oglavline{
+		top: 3%;
+	}
+	.oglavline h2{
+		font-size: 13px;
+	}
+	.oglavline h1{
+		font-size: 16px;
+		margin-top: 5px;
+	}
+	.oglavline p{	
+		margin-top: 5px;
+	}
+}
 /*end_height*/
