@@ -1312,7 +1312,7 @@ margin-left: 10px;
   opacity: 0.5;
   transition: all 0.5s ease;
 }
-/*end-reset-post*/
+/**/
 /*---------------------------------------------------------------------------*/
 /*footer*/
 .footer{
@@ -1363,7 +1363,7 @@ margin:0;
 .foots .left-foot a:last-child:after, .foots .right-foot a:last-child:after{
   display: none;
 }
-/*end-footer*/
+/**/
 
 
 
