@@ -284,9 +284,7 @@
 }
 /*----------------------------------------------------------------------*/
 /*height*/
-@media(max-height: 800px){
-	
-}	
+
 @media(max-height: 640px){
 	.oglavline{
 		top: 16%;
@@ -319,13 +317,10 @@
 
 @media(max-height: 380px){
 	.oglavline{
-		top: 7%;
+		top: 5%;
 	}
 	.oglavline .oglav_button{
 		margin-top: 10px;
-	}
-	.slider__indicators{
-		bottom: 3px;
 	}
 	
 	.oglavline h2{
@@ -337,6 +332,7 @@
 	.oglavline p{
 		font-size: 10px;
 		line-height: 15px;
+		margin-top: 10px;
 	}
 }
 /*end_height*/
