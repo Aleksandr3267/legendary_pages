@@ -123,16 +123,17 @@
 @media(max-width: 800px){
 	body.lock{
 		overflow: hidden;
+		z-index: 1000;
 	}
 	.header-burger{
 		display: block;
 		position: relative;
-		/*left: 85%;*/
+		
 		margin:0px 20px 0 0;
 		
 		width: 30px;
 		height: 30px;
-		z-index: 100;
+		z-index: 1000000000;
 		order: 2;
 	}
 	.header-burger:before,
@@ -174,7 +175,7 @@
 	}
 	#main-menu{
 		position: fixed;
-		background: rgba(0,0,0,0.5);
+		background: rgba(0,0,0,0.6);
 		padding: 50px 0 150px 0;
 		top: 0;
 		left: -100%;
@@ -279,6 +280,9 @@
 		margin:80px 20px 0 0 ;
 		left: 85%;
 	}
+	#navbar.fixed{
+		padding-bottom: 100px;
+	}
 	
 
 }
@@ -287,12 +291,12 @@
 
 @media(max-height: 640px){
 	.oglavline{
-		top: 16%;
+		top: 35%;
 	}
 }	
 @media(max-height: 510px){
 	.oglavline{
-		top: 10%;
+		top: 30%;
 	}
 }	
 @media(max-height: 470px){
@@ -317,7 +321,7 @@
 
 @media(max-height: 380px){
 	.oglavline{
-		top: 5%;
+		top: 35%;
 	}
 	.oglavline .oglav_button{
 		margin-top: 10px;
@@ -336,18 +340,13 @@
 	}
 }
 @media(max-height: 320px){
-	.oglavline{
-		top: 3%;
-	}
+	
 	.oglavline h2{
 		font-size: 13px;
 	}
 	.oglavline h1{
 		font-size: 16px;
-		margin-top: 5px;
-	}
-	.oglavline p{	
-		margin-top: 5px;
+		
 	}
 }
 /*end_height*/

@@ -8,7 +8,38 @@ $(document).ready(function() {
 });
 // 
 // --------------------------------------------------------------------------
+// ВЫДВИГАЕМОЕ МЕНЮ
+$(document).ready(function() {
+   var previousScroll = 0,
+     navBarOrgOffset = $('#navbar').offset().top;
 
+   $('#navigation').height($('#navbar').height());
+
+   $(window).scroll(function() {
+     var currentScroll = $(this).scrollTop();
+    // console.log(currentScroll + " and " + previousScroll + " and " + navBarOrgOffset);
+     if (currentScroll > navBarOrgOffset) {
+       if (currentScroll > previousScroll) {
+         document.getElementById("navbar").style.top = "-126px"; 
+          
+
+        
+       } else {
+         document.getElementById("navbar").style.top = "50px";
+         $('#navbar').addClass('fixed');
+
+
+       }
+     } else {
+       $('#navbar').removeClass('fixed');
+        
+
+     }
+     previousScroll = currentScroll;
+   });
+
+ });
+// -------------------------------------------------------------------------------
 // slider
 'use strict';
     var slider = (function (config) {
