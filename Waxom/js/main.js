@@ -317,11 +317,14 @@ $(document).on('click', '.play_video', function() {
   var $video = $('#video'),
     src = $video.attr('src');
  
-  $video.attr('src', src + '&autoplay=1');
+  $video.attr('src', src + '&autoplay=0');
 
-  
   $('.overflow, .contant_on_video').hide(200);
 });
+
+
+
+
 // 
 // --------------------------------------------------------------------------
 // numbers
