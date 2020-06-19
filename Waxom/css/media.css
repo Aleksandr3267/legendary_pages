@@ -175,13 +175,13 @@
 	}
 	#main-menu{
 		position: fixed;
-		background: rgba(0,0,0,0.6);
+		background: rgba(0,0,0,0.8);
 		padding: 50px 0 150px 0;
 		top: 0;
 		left: -100%;
 		transition: all 0.4s ease 0s;
 		overflow: auto;
-		width: 50%;
+		width: 60%;
 	 	height: 100%;
 	 	
 	}
@@ -205,6 +205,69 @@
 		order: 1;
 	}
 
+}
+
+
+
+@media(max-width: 740px){
+
+	/* фильтрация */
+	.filter_img_dark i{
+	cursor: pointer;
+   
+  }
+  	.war .filter-img .filter_img_dark{
+	background: rgba(0,0,0,0.5);
+   
+   
+  }
+	.war .filter-img .filter_img_dark i {
+	transform: none;
+	
+	
+  }
+  
+  	.war .contant{
+	background:#362f2d;
+	
+  }
+  	.war .contant h3{
+	color: white;
+	
+  }
+  	.war .contant p{
+	color: #c7b299; 
+	
+  }
+  /* ------------------------------------- */
+
+  /* посты */
+  .recent-posts .pageses .pages .sloy  {  
+	background: rgba(0,0,0,0.5);
+	
+  }
+  .recent-posts .pageses .pages .top-pages .data .number {
+	background:#c7b299;
+	
+	
+  }  
+  .recent-posts .pageses .pages .top-pages .data .month{
+	background:#a48d72;
+	
+  }
+  .recent-posts .pageses .pages .bottom-pages{
+	background:#362f2d;
+	
+  }
+  .recent-posts .pageses .pages .bottom-pages h3{
+	color:#c0ab93; 
+	
+  }
+  .recent-posts .pageses .pages .bottom-pages p{
+	color: white;
+	
+  }
+  /* ------------------------------------- */
 }
 @media(max-width: 720px){
 
