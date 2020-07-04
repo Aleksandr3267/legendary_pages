@@ -312,23 +312,32 @@ $(document).ready(function() {
 });
 // 
 // --------------------------------------------------------------------------
-// video
+
+// ДЛЯ ВИДЕО
+var video;
+
+window.onload = function() {
+  video = document.getElementById("video");
+  
+};
+
+function play1() {
+  video1.play();
+  
+}
+// -----------------------------------------
+// пуск1
 $(document).on('click', '.play_video', function() {
-  var $video = $('#video'),
-    src = $video.attr('src');
- 
-  $video.attr('src');
+  
+  $(' .play_video, .overflow_video').hide(100);
 
-  $('.overflow, .contant_on_video').hide(200);
 });
-
-
-
+// --------------------------------
 
 // 
 // --------------------------------------------------------------------------
 // numbers
-var time = 2, cc = 1;
+var time = 145, cc = 1;
 $(window).scroll(function() {
 $('#counter').each(function(){
   var
@@ -341,14 +350,14 @@ $('#counter').each(function(){
           var 
           i = 1,
           num = $(this).data('num'),
-          step = 1000 * time / num,
+          step = 100 * time / num,
           that = $(this),
           int = setInterval(function(){
             if (i <= num) {
               that.html(i);
             }
             else {
-              cc = cc + 2;
+              cc = cc + 10;
               clearInterval(int);
             }
             i++;

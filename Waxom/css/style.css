@@ -137,7 +137,7 @@ body{
   max-width: 600px;
   display: flex;
   flex-direction: column;
-  position: relative;
+  position: absolute;
   align-items: center;
   top: 36%;
   
@@ -418,10 +418,12 @@ body{
 .infomas{
 	display: flex;
 	justify-content: space-around;
-	align-items: center;
+	
 }
 .info{
-	text-align: center;
+  text-align: center;
+  width: 100%;
+  padding: 0 20px;
 }
 .info i{
 	font-size: 40px;
@@ -690,22 +692,41 @@ button:hover, .focused{
 }
 /*end_filter*/
 /*---------------------------------------------------------------------------*/
+
 /*video*/
 .video_wrap{
   margin:80px 0 0 0;
 }
 .video_wrap .video_progect .contant_on_video{
-  display: flex;
   position: absolute;
   z-index: 2;
   width: 100%;
-  left: auto;
-  margin-top: 230px;
+}
+.video_wrap .video_progect .overflow_video{
+  background: url(../img/bg2.jpg) no-repeat center top / cover;
+  width: 100%;
+  padding: 200px 0 0 0;
+  overflow: hidden;
+  height: 705px;
+  display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-    
 }
+.video_wrap .video_progect .overflow_video::after{
+  
+  
+}
+
+.overflow_video .dark_overflow{
+  position: absolute;
+  background: rgba(0,0,0,0.5);
+  margin: -200px 0 0 0;
+  width: 100%;
+  height: 705px;
+  z-index: 1;
+} 
+
 .video_wrap .play_video{
   width: 100px;
   height: 100px;
@@ -714,6 +735,7 @@ button:hover, .focused{
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 2;
 
 }
 .video_wrap .play_video .around_play{
@@ -782,6 +804,7 @@ button:hover, .focused{
 /*-------------------------------------------*/
 .video_wrap .video_progect .contant_on_video .contant_video{
   margin-top: 40px;
+  z-index: 2;
 }
 .video_wrap .video_progect .contant_on_video .contant_video h2, .video_wrap .video_progect .contant_on_video .contant_video p{
   color: white;
@@ -796,6 +819,8 @@ button:hover, .focused{
   font-size: 16px;
   letter-spacing: 0.05em;
   line-height: 25px;
+  width: 100%;
+  max-width: 700px;
 }
 .video_wrap .video_progect .contant_on_video .contant_video ul li{
   margin-top: 20px;
@@ -810,22 +835,10 @@ button:hover, .focused{
   top: 0px;
   z-index: 1;
 }
-
-
-
-.overflow{
-  background: url(../img/bg2.jpg) no-repeat center top / cover;
-  width: 100%;
-  display: block;
-  overflow: hidden;
-  height: 705px;
-  position: relative;
-  top:-708px; 
-}
-.overflow .dark_overflow{
-  background: rgba(0,0,0,0.5);
+.video_wrap .video_palayer video{
   width: 100%;
   height: 705px;
+  background: black;
 }
 /*end_video*/ 
 /*---------------------------------------------------------------------------*/
@@ -974,7 +987,7 @@ button:hover, .focused{
 }
 .recent-posts .pageses{
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: space-between;
   margin:40px 0 0 0;
 }
@@ -1247,6 +1260,7 @@ margin-left: 10px;
 .foots .left-foot span, .right-foot span{
   color: white;
   font-weight: 100;
+  margin: 0 0 0 5px;
 }
 .foots .left-foot a, .right-foot a{
   display: flex;

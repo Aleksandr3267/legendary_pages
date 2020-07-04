@@ -16,6 +16,7 @@
 <!-- WRAPPER   -->
 <div class="wrapper">
 <!-- ---------------------------------------------------------------------------- -->  
+
 <!-- header -->
 <header class="header"> 
   <div id="slider" class="slider ibg">  
@@ -57,15 +58,15 @@
           </div>
           <!--  -->
           <!-- ИНСТРУМЕНТЫ -->
-           <div class="instrumentary">
-             <div class="inst">
+          <div class="instrumentary">
+            <div class="inst">
               <i class="fas fa-suitcase"></i>
-             </div>
-             <div class="inst">
-               <i class="fas fa-search"></i>
-             </div>
-           </div>   
-           <!--  -->
+            </div>
+            <div class="inst">
+              <i class="fas fa-search"></i>
+            </div>
+          </div>   
+          <!--  -->
         </nav>                
       </div>
 
@@ -122,6 +123,7 @@
   </div>
 </header>
 <!-- ---------------------------------------------------------------------------- -->
+
 <!-- inform -->
 <section class="INFORMASHN">
 		<div class="container">
@@ -172,6 +174,7 @@
 		</div>
 </section>
 <!-- ---------------------------------------------------------------------------- -->
+
 <!-- ideas -->
 <section class="realization">
 		<div class="container">
@@ -181,14 +184,15 @@
 					<p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam<br/> processus dynamicus, qui sequitur mutationem consuetudium.</p>
 				</div>
 				<div class="idean">
-					<img class="bounceInLeft wow" data-wow-delay="1.0s" src="img/browser-left.jpg" alt="idean">
-          <img class="fadeInUp wow" data-wow-delay="1.2s" src="img/browser-center.jpg" alt="idean">
-          <img class="bounceInRight wow" data-wow-delay="0.8s" src="img/browser-right.jpg" alt="idean">
+					<img class="bounceInLeft wow" data-wow-delay="0.8s" src="img/browser-left.jpg" alt="idean">
+          <img class="fadeInUp wow" data-wow-delay="1.0s" src="img/browser-center.jpg" alt="idean">
+          <img class="bounceInRight wow" data-wow-delay="0.6s" src="img/browser-right.jpg" alt="idean">
 				</div>
 			</div>
 		</div>
 </section>
 <!-- ---------------------------------------------------------------------------- -->
+
 <!-- plashka -->
 <section class="wordpresstem">
 		<div class="container">
@@ -204,6 +208,7 @@
 		</div>
 </section>
 <!-- ---------------------------------------------------------------------------- -->
+
 <!--filtration -->
 <section class="filterse">
   <div class="container">                     
@@ -218,13 +223,13 @@
       <div class="filteris">
         <!-- КНОПКИ -->
         <div class="controls">
-       
+          
           <button val="on" class="button" filter="all">All</button>
           <button val="off" class="button" filter="moc">Web Design</button>
           <button val="off" class="button" filter="mob">Mobile App</button>   
           <button val="off" class="button" filter="wd">Illustration</button>
           <button val="off" class="button" filter="ud">Photography</button>
-         
+        
         </div>
         <!--  -->
         <!-- БЛОКИ ФИЛЬТРА -->
@@ -241,11 +246,11 @@
                 <p>Photography, Nature</p>
               </div>
             </div>
-            <div filter="ud" class="war">
+            <div date-filter="ud" class="war">
               <div class="filter-img">
                 <div class="filter_img_dark">
-                	<i class="fas fa-link"></i>
-                  	<i class="fas fa-search"></i>
+                  <i class="fas fa-link"></i>
+                  <i class="fas fa-search"></i>
                 </div>
               </div> 
               <div class="contant">
@@ -257,7 +262,7 @@
               <div class="filter-img">
                 <div class="filter_img_dark">
                 	<i class="fas fa-link"></i>
-                  	<i class="fas fa-search"></i>
+                  <i class="fas fa-search"></i>
                 </div>
               </div> 
               <div class="contant">
@@ -269,7 +274,7 @@
               <div class="filter-img">
                 <div class="filter_img_dark">
                 	<i class="fas fa-link"></i>
-                  	<i class="fas fa-search"></i>
+                  <i class="fas fa-search"></i>
                 </div>
               </div> 
               <div class="contant">
@@ -302,7 +307,7 @@
               </div>
             </div>          
         </div>
-         <!--  -->
+        <!--  -->
       </div>
       <!--  -->
 <!-- filter_button -->
@@ -314,57 +319,54 @@
   </div>
 </section>
 <!-- ---------------------------------------------------------------------------- -->
+
 <!-- video -->
 <section class="video_wrap">
   <div class="video_progect">
     <!-- contant_on_vdeo -->
     <div class="contant_on_video">
-      <!-- pusk -->
-      <div class="play_video">
-        <div class="around_play">
-          <div class="treugol">
-              
+
+      <div class="overflow_video">
+        <div class="dark_overflow"></div>
+        <!-- pusk -->
+        <div class="play_video" onclick="play1()">
+          <div class="around_play">
+            <div class="treugol">
+                
+            </div>
           </div>
         </div>
+        <!-- end_pusk -->
+        <!-- contant_video -->
+        <div class="contant_video">
+          <h2>Waxom Video Presentation</h2>
+          <p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius, qui sequitur mutationem consuetudium.</p>
+          <ul>
+            <li>03:26</li>
+          </ul>
+        </div>
+        <!-- end_contant_video   --> 
       </div>
-      <!-- end_pusk -->
-      <!-- contant_video -->
-      <div class="contant_video">
-        <h2>Waxom Video Presentation</h2>
-        <p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius, qui<br/> sequitur mutationem consuetudium.</p>
-        <ul>
-          <li>03:26</li>
-        </ul>
-      </div>
-      <!-- end_contant_video   -->  
+
     </div>
-    <!-- end_contant_on_vdeo -->  
+    <!-- ---------------------- -->
+
     <!-- video-pusk -->
     <div class="video_palayer">
+      <video id="video1" class="my-guest" controls muted=""  src="mauntin.mp4" ></video>
 
-      <iframe id="video"  width="100%" height="705px" src="mauntin.mp4?mute=1" frameborder="0" allow="accelerometer; gyroscope; picture-in-picture" allowfullscreen>
-        
-      </iframe>
-      
-      <!-- picture-overflow -->
-      <div class="overflow">
-        <div class="dark_overflow">
-          
-        </div>
-      </div>
-      <!-- end_picture-overflow -->
     </div>
     <!-- end_video-pusk -->
   </div>
 </section>
-		
 <!-- ---------------------------------------------------------------------------- -->	
+
 <!-- блок с телефоном  -->
 <section class="ExcellentforMobileDevices">
 		<div class="container">
 			<div class="MobileDevices">
         <!-- ТЕЛЕФОН -->
-				<div class="phone bounceInLeft wow" data-wow-delay="0.9s">
+				<div class="phone bounceInLeft wow" data-wow-delay="0.7s">
 					
 				</div>
         <!--  -->
@@ -384,9 +386,9 @@
         <!--  -->
 			</div>
 		</div>
-	</section>
- 
- <!-- ------------------------------------------------------------------------------->
+</section>
+<!-- ------------------------------------------------------------------------------->
+
 <!-- СЧЁТЫ -->
 <section class="nambers_informs">
   <div id="counter" class="numbers_contant">
@@ -429,6 +431,7 @@
   </div>
 </section>
 <!-- ---------------------------------------------------------------------------- -->
+
 <!-- БЛОК С ПОСТАМИ -->
 <section class="postees">
 		<div class="container">
@@ -499,10 +502,11 @@
         <!--  -->
       </div>
 		</div>
-	</section>
-  <!-- ---------------------------------------------------------------------------- -->
-  <!-- БЛОК С КОМПАНИЯМИ -->
-	<section class="company_contant">
+</section>
+<!-- ---------------------------------------------------------------------------- -->
+  
+<!-- БЛОК С КОМПАНИЯМИ -->
+<section class="company_contant">
   <div class="siema company">
 
       <div>
@@ -517,10 +521,11 @@
         <img src="img/logo-03.png" alt="image" />
         <img src="img/logo-04.png" alt="image" />
       </div>
-       
+    
   </div>
 </section>
 <!-- ---------------------------------------------------------------------------- -->
+
 <!-- ЗАВЕРШАЮЩИЙ БЛОК -->
 <section class="recent-posts2">
   <div class="container">
@@ -535,12 +540,12 @@
         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing<br/>elit, sed diam nonummy nibh euismod tincidunt ut<br/> laoreet dolore magna aliquam erat<br/> volutpat. Ut wisi enim ad minim<br/> veniam, quis nostrud exerci suscipit<br/> lobortis claritatem.</p>
         <a href="#">Read More</a>
       </div>
-
+      
       <div class="post">
         <h4>Recent Posts</h4>
         <div class="post-month">
           <ul>
-           <li>September 08, 2015</li>
+            <li>September 08, 2015</li>
           </ul>
           <p>Lorem ipsum dolor sit amet, consec-<br/>tetuer adipiscing elit</p>
         </div>
@@ -552,7 +557,7 @@
         </div>
         <div class="post-month">
           <ul>
-           <li>September 08, 2015</li>
+            <li>September 08, 2015</li>
           </ul>
           <p>Claritas est etiam processus dynamic-<br/>us, qui sequitur mutationem per seac-<br/>ula quarta decima</p>
         </div>
@@ -569,7 +574,7 @@
         <div class="post-day">
           <p>Mirum est <span>#envato</span> notare quam littera<br/> gothica, quam nunc putamus parum<br/> anteposuerit litterarum</p>
           <ul>
-           <li>5 hours ago</li> 
+            <li>5 hours ago</li> 
           </ul>
         </div>
         <div class="post-day">
@@ -599,6 +604,7 @@
   </div>
 </section>
 <!-- ---------------------------------------------------------------------------- -->
+
 <!-- footer -->
 	<footer class="footer">
 		<div class="container">
@@ -617,6 +623,7 @@
 		</div>
 	</footer>
 <!------------------------------------------------------------------------------> 
+
 </div>
 <!-- КОНЕЦ WRAPPER -->
   <!-- СКРИПТЫ -->
