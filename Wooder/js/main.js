@@ -21,43 +21,6 @@ $(document).ready(function() {
 });
 // --------------------------------------
 
-// анимация при скроле)
-var isScrolling=false;
-$(window).on("DOMMouseScroll mousewheel",function(e){
-    if(!isScrolling){
-        isScrolling=true;
-        var delta = parseInt(e.originalEvent.wheelDelta || -e.originalEvent.detail);
-        if (delta >= 0) {
-            isScrolling=false;
-            $('.hidden').removeClass('hidden');
-        }else {
-            if($(window).scrollTop()>300){
-                $('.one').addClass('hidden');
-            }
-            if($(window).scrollTop()>1200){
-              $(' .two').addClass('hidden');
-            }
-            isScrolling=false;
-        }
-    }
-});
-// --------------------------------------------------
-
-// ЯЗЫКИ
-$(document).ready(function() {
-  $('.dropdown').click(function(event){
-    $(this).toggleClass('active').next().slideToggle(100);  
-  });
-  
-  // $('body').click(function(event){
-  //   $('.dropdown').removeClass('active').next().slideToggle(100);
-    
-    
-  // });
-
-});
-// --------------------------------------------------
-
 // якорь
 const anchors = document.querySelectorAll('a[href*="#"]')
 for (let anchor of anchors) {
