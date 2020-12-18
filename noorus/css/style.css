@@ -1,0 +1,351 @@
+/* Box sizing rules */ *, *::before, *::after { box-sizing: border-box; } /* Remove default padding */ ul[class], ol[class] { padding: 0; } /* Remove default margin */ body, h1, h2, h3, h4, p, ul[class], ol[class], li, figure, figcaption, blockquote, dl, dd { margin: 0; } /* Set core body defaults */ body { min-height: 100vh; scroll-behavior: smooth; text-rendering: optimizeSpeed; line-height: 1.5; } /* Remove list styles on ul, ol elements with a class attribute */ ul[class], ol[class] { list-style: none; } /* A elements that don't have a class get default styles */ a:not([class]) { text-decoration-skip-ink: auto; } /* Make images easier to work with */ img { max-width: 100%; display: block; } /* Natural flow and rhythm in articles by default */ article>*+* { margin-top: 1em; } /* Inherit fonts for inputs and buttons */ input, button, textarea, select { font: inherit; } /* Remove all animations and transitions for people that prefer not to see them */ @media (prefers-reduced-motion: reduce) { * { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; } } *,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;} :focus,:active{outline: none;}
+
+
+/* --------------------------------- wrapper -------------------------------- */
+.wrapper {
+    overflow: hidden;
+    position: relative;
+    font-family: Gilroy, sans-serif;
+}
+/* container */
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1178px;
+    margin: 0 auto;
+}
+
+/* --------------------------------- for_all -------------------------------- */
+/* logo */
+.logo {
+    position: relative;
+    width: 100%;
+    max-width: 218px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10;
+}
+.heading{
+    font-weight: 800;
+    font-size: 3em;
+}
+/* addres and phone */
+/* addres */
+.addres {
+    margin: 30px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+.addres .social_networks {
+    display: flex;
+}
+/* phone */
+.phone {
+    margin: 10px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+.phone .number {
+    font-weight: 800;
+    font-size: 22px;
+}
+.phone a {
+    color: white;
+    transition: 0.5s ease;
+}
+.phone a:hover{
+    color:orange;
+}
+
+/* --------------------------------- header --------------------------------- */
+.header {
+    background: url(../image/background_header.png) no-repeat center top / cover;
+    padding: 0 20px 110px 20px;
+}
+/* nav */
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+/* burger_menu */
+.burder_menu{
+    display: none;
+    position: relative;
+    top: 30px;
+    width: 40px;
+    height: 40px;
+    z-index: 100000;
+}
+.burder_menu::after, .burder_menu::before, .burder_menu span{
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background: white;
+    border-radius: 7px;
+    transition: 0.3s ease-in;
+}
+.burder_menu::after{
+    top: 0;
+}
+.burder_menu span{
+    top: 45%;
+}
+.burder_menu::before{
+    bottom: 0;
+}
+
+.burder_menu.active:before{
+    transform: rotate(-45deg);
+    bottom: 43%;
+}
+.burder_menu.active:after{
+    transform: rotate(45deg);
+    top: 43%;
+}
+.burder_menu.active span{
+    transform: scale(0);
+}
+/* menu */
+nav .nav_bar .menu {
+    margin: 30px 0 0 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+nav .nav_bar .menu li .link {
+    color: white;
+    font-weight: 800;
+    font-size: 16px;
+    margin: 0px 20px;
+    line-height: 30px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+nav .nav_bar .menu li .link:hover{
+    color:orange;
+}
+/*nav logo */
+nav .logo {
+    margin: -22px 0 0 0;
+}
+
+/* home */
+header .home {
+    margin: 127px 0 0 0;
+}
+
+/* heading */
+header .home .header_heading {
+    width: 100%;
+    max-width: 550px;
+    color: white;
+}
+/* blocks */
+header .home .blocks {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 57px 0 0 0;
+}
+header .home .blocks .block {
+    width: 100%;
+    max-width: 558px;
+    background: white;
+    color: #000;
+    margin: 20px 0 0 0;
+    padding: 15px;
+}
+header .home .blocks .block .content_block {
+    border: 1px solid black;
+    padding: 15px;
+    box-shadow: 0px 11px 23px rgba(0, 0, 0, 0.25);
+}
+header .home .blocks .block .name_products {
+    font-weight: 800;
+    font-size: 25px;
+}
+
+/* ------------------------------ about_company ----------------------------- */
+.about_company {
+    padding: 10px 20px 70px 20px;
+}
+/* about_contents */
+.about_company .about_contents {
+    display: flex;
+    z-index: 10;
+}
+/* about_content_left */
+.about_company .about_contents .about_content_left {
+    width: 100%;
+    max-width: 610px;
+    z-index: 10;
+}
+.about_company .about_contents .about_content_left .about_company_heading {
+    margin: 30px 0 0 0;
+}
+.about_company .about_contents .about_content_left .about_company_text:first-child,
+.about_company .about_contents .about_content_left .about_company_text:last-child {
+    margin: 16px 0 0 0;
+}
+.about_company .about_contents .about_content_left .about_company_text {
+    font-weight: 300;
+    font-size: 18px;
+    margin: 25px 0 0 0;
+}
+/* image_products */
+.image_products {
+    position: absolute;
+    left: 45%;
+    top: -15%;
+    z-index: 1;
+}
+
+/* --------------------------------- history -------------------------------- */
+.history {
+    padding: 65px 20px 100px 20px;
+    background: url(../image/background_history.png) no-repeat center top / cover;
+}
+/* history_content */
+.history .history_content {
+    display: flex;
+    flex-direction: column;
+}
+/* history_heading */
+.history .history_content .history_heading {
+    text-align: center;
+}
+/* history_blocks */
+.history .history_content .history_blocks {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 26px 0 0 0;
+}
+.history .history_content .history_blocks .history_block {
+    width: 100%;
+    background: white;
+    max-width: 362px;
+    padding: 20px;
+    margin: 30px 0 0 0;
+}
+.history .history_content .history_blocks .history_block .history_block_inside {
+    border: 1px solid black;
+    max-width: 322px;
+}
+.history .history_content .history_blocks .history_block .history_block_inside .history_text{
+    padding: 28px 14px;
+}
+
+/* --------------------------------- charity -------------------------------- */
+.charity{
+    padding: 52px 20px 20px 20px;
+}
+.charity .charity_content{
+
+}
+.charity .charity_content .charity_heading {
+    text-align: center;
+}
+.charity .charity_content .charity_blocks{
+    margin: 45px 0 0 0;
+    display: flex;
+}
+.charity .charity_content .charity_blocks .charity_block_left{
+    width: 100%;
+    max-width: 620px;
+}
+.charity .charity_content .charity_blocks .charity_block_left .charity_block_left_text{
+    margin: 25px 0 0 0;
+}
+.charity .charity_content .charity_blocks .charity_block_left .charity_block_left_text:last-child{
+    font-weight: 800;
+}
+
+/* charity_slider */
+.charity_slider{
+    position: relative;
+    width: 100%;
+    max-width: 392px;
+    min-width: 0;
+    padding: 0 30px;
+}
+/* arrows */
+.charity_slider .slick-arrow{
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    font-size: 0;
+    width: 20px;
+    height: 20px;
+    border:none;
+    transition: 0.5s ease;
+}
+.charity_slider .slick-arrow:hover{
+    opacity: 0.4;
+}
+.charity_slider .slick-arrow.slick-prev{
+    left: 0;
+    background: url(../image/lefts-arrow\ 2.svg) 0 0 / 100% no-repeat;
+}
+.charity_slider .slick-arrow.slick-next{
+    right: 0;
+    background: url(../image/right-arrow\ 1.svg) 0 0 / 100% no-repeat;
+}
+/* charity_slider */
+/* Ограничивающая оболочка */
+.slick-list {
+    overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track{
+    display: flex;
+}
+/* Активная точка */
+.slick-dots li.slick-active{}
+/* Элемент точки */
+/* Точки (булиты) */
+.charity_slider .slick-dots{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.charity_slider .slick-dots li{
+    margin: 0 10px;
+}
+/* Элемент точки */
+.slick-dots li button{
+    font-size: 0;
+    width: 30px;
+    height: 3px;
+    background: grey;
+    border:none;
+    border: none;
+}
+/* Активная точка */
+.charity_slider .slick-dots li.slick-active button{
+    border:none;
+    background: black;
+}
+
+/* --------------------------------- footer --------------------------------- */
+footer{
+    padding: 66px 20px 85px 20px;
+    background:  #595959;
+}
+.footer_content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* footer logo */
+.footer_content .logo {
+
+}
+.footer_content .footer_center .addres{
+    margin: 0;
+}
