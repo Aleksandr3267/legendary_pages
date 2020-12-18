@@ -66,7 +66,7 @@
 
 /* --------------------------------- header --------------------------------- */
 .header {
-    background: url(../image/background_header.png) no-repeat center top / cover;
+    background: url(../image/background_header.WebP) no-repeat center top / cover;
     padding: 0 20px 110px 20px;
 }
 /* nav */
@@ -209,7 +209,7 @@ header .home .blocks .block .name_products {
 /* --------------------------------- history -------------------------------- */
 .history {
     padding: 65px 20px 100px 20px;
-    background: url(../image/background_history.png) no-repeat center top / cover;
+    background: url(../image/background_history.WebP) no-repeat center top / cover;
 }
 /* history_content */
 .history .history_content {
