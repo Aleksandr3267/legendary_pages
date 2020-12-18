@@ -3,6 +3,9 @@
     /* burger */
     .burder_menu{
         display: block;
+        
+        position: fixed;
+        
     }
 
     body.lock{

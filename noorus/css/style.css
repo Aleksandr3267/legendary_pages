@@ -88,7 +88,7 @@ nav {
     position: absolute;
     width: 100%;
     height: 5px;
-    background: white;
+    background: rgba(0, 0, 0, 0.6);
     border-radius: 7px;
     transition: 0.3s ease-in;
 }
@@ -105,13 +105,16 @@ nav {
 .burder_menu.active:before{
     transform: rotate(-45deg);
     bottom: 43%;
+    background: white;
 }
 .burder_menu.active:after{
     transform: rotate(45deg);
     top: 43%;
+    background: white;
 }
 .burder_menu.active span{
     transform: scale(0);
+    background: white;
 }
 /* menu */
 nav .nav_bar .menu {
