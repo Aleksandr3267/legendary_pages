@@ -1,6 +1,6 @@
 // якорь
 $(document).ready(function(){
-    $("#main-menu").on("click","a", function (event) {
+    $("#main").on("click","a", function (event) {
         event.preventDefault();
         var id  = $(this).attr('href'),
             top = $(id).offset().top;
@@ -10,7 +10,7 @@ $(document).ready(function(){
 // burger
 $(document).ready(function () {
     $('.burder_menu').click(function (event) {
-        $('.burder_menu, #main-menu').toggleClass('active');
+        $('.burder_menu, #main-menu, #main-menu-news').toggleClass('active');
         $('body').toggleClass('lock');
     });
 });
