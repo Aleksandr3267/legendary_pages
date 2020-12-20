@@ -7,6 +7,7 @@ $(document).ready(function(){
         $('body,html').animate({scrollTop: top}, 1000);
     });
 });
+
 // burger
 $(document).ready(function () {
     $('.burder_menu').click(function (event) {
@@ -14,10 +15,14 @@ $(document).ready(function () {
         $('body').toggleClass('lock');
     });
 });
+$('.link').on('click', function(){
+    $('.burder_menu, #main-menu, #main-menu-news').toggleClass('active');
+    $('body').toggleClass('lock');
+});
+
 // slider
 $(document).ready(function () {
     $('.charity_slider').slick({
         dots: true,
-
     });
 });
