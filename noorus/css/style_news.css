@@ -5,7 +5,10 @@
     color:white;
     font-size: 1em;
     font-weight: 800;
-    
+    transition: 0.3s ease;
+}
+nav .nav_bar .menu li .go_home:hover{
+    color:orange;
 }
 .news .heading{
     text-align: center;
