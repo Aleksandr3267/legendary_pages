@@ -1,0 +1,166 @@
+
+#go_news{
+    text-decoration: none;
+}
+
+/* ------------------------------ about_company ----------------------------- */
+.about_company {
+    padding: 10px 20px 70px 20px;
+}
+/* about_contents */
+.about_company .about_contents {
+    display: flex;
+    z-index: 10;
+}
+/* about_content_left */
+.about_company .about_contents .about_content_left {
+    width: 100%;
+    max-width: 610px;
+    z-index: 10;
+}
+.about_company .about_contents .about_content_left .about_company_heading {
+    margin: 30px 0 0 0;
+}
+.about_company .about_contents .about_content_left .about_company_text:first-child,
+.about_company .about_contents .about_content_left .about_company_text:last-child {
+    margin: 16px 0 0 0;
+}
+.about_company .about_contents .about_content_left .about_company_text {
+    font-weight: 300;
+    font-size: 18px;
+    margin: 25px 0 0 0;
+}
+/* image_products */
+.image_products {
+    position: absolute;
+    left: 45%;
+    top: -15%;
+    z-index: 1;
+}
+
+/* --------------------------------- history -------------------------------- */
+.history {
+    padding: 65px 20px 100px 20px;
+    background: url(../image/background_history.png) no-repeat center top / cover;
+}
+/* history_content */
+.history .history_content {
+    display: flex;
+    flex-direction: column;
+}
+/* history_heading */
+.history .history_content .history_heading {
+    text-align: center;
+}
+/* history_blocks */
+.history .history_content .history_blocks {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 26px 0 0 0;
+}
+.history .history_content .history_blocks .history_block {
+    width: 100%;
+    background: white;
+    
+    max-width: 362px;
+    padding: 20px;
+    margin: 30px 0 0 0;
+}
+.history .history_content .history_blocks .history_block .history_block_inside {
+    border: 1px solid black;
+    max-width: 322px;
+}
+.history .history_content .history_blocks .history_block .history_block_inside .history_text{
+    padding: 28px 14px;
+}
+
+/* --------------------------------- charity -------------------------------- */
+.charity{
+    padding: 52px 20px 20px 20px;
+}
+.charity .charity_content{
+
+}
+.charity .charity_content .charity_heading {
+    text-align: center;
+}
+.charity .charity_content .charity_blocks{
+    margin: 45px 0 0 0;
+    display: flex;
+}
+.charity .charity_content .charity_blocks .charity_block_left{
+    width: 100%;
+    max-width: 620px;
+}
+.charity .charity_content .charity_blocks .charity_block_left .charity_block_left_text{
+    margin: 25px 0 0 0;
+}
+.charity .charity_content .charity_blocks .charity_block_left .charity_block_left_text:last-child{
+    font-weight: 800;
+}
+
+/* charity_slider */
+.charity_slider{
+    position: relative;
+    width: 100%;
+    max-width: 392px;
+    min-width: 0;
+    padding: 0 30px;
+}
+/* arrows */
+.charity_slider .slick-arrow{
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    font-size: 0;
+    width: 20px;
+    height: 20px;
+    border:none;
+    transition: 0.5s ease;
+}
+.charity_slider .slick-arrow:hover{
+    opacity: 0.4;
+}
+.charity_slider .slick-arrow.slick-prev{
+    left: 0;
+    background: url(../image/lefts-arrow\ 2.svg) 0 0 / 100% no-repeat;
+}
+.charity_slider .slick-arrow.slick-next{
+    right: 0;
+    background: url(../image/right-arrow\ 1.svg) 0 0 / 100% no-repeat;
+}
+/* charity_slider */
+/* Ограничивающая оболочка */
+.slick-list {
+    overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track{
+    display: flex;
+}
+/* Активная точка */
+.slick-dots li.slick-active{}
+/* Элемент точки */
+/* Точки (булиты) */
+.charity_slider .slick-dots{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.charity_slider .slick-dots li{
+    margin: 0 10px;
+}
+/* Элемент точки */
+.slick-dots li button{
+    font-size: 0;
+    width: 30px;
+    height: 3px;
+    background: grey;
+    border:none;
+    border: none;
+}
+/* Активная точка */
+.charity_slider .slick-dots li.slick-active button{
+    border:none;
+    background: black;
+}
