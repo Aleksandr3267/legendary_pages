@@ -170,19 +170,15 @@ nav .nav_bar .menu li .link:hover, nav .nav_bar .menu li .active{
 }
 .we_offer_content_categories{
     margin: 70px 0 0 0;
-    /* display: grid;
-    grid-template-columns: 1fr 1fr 1fr; */
     display: flex;
     align-items: center;
     justify-content: center;
-    row-gap: 25px;
-    column-gap: 25px;
     flex-wrap: wrap;
 }
 .we_offer_content_categories .category{
     position: relative;
     transition: 0.15s linear;
-    /* margin: 10px; */
+    margin: 10px;
     width: 100%;
     max-width: 360px;
     background: #FFFFFF;
@@ -342,13 +338,6 @@ nav .nav_bar .menu li .link:hover, nav .nav_bar .menu li .active{
 .show-hide:hover::after, .show-hide:hover::before{
     top: 60%;
 }
-
-
-
-
-
-
-
 
 /* --------------------------------- footer --------------------------------- */
 .footer{
