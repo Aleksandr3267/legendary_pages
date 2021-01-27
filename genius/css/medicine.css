@@ -1,0 +1,61 @@
+/* --------------------------------- header --------------------------------- */
+.header{
+    background:url(../img/bg_medicine.png) no-repeat center top / cover;
+}
+.header .home{
+    margin: 170px 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.header .home .heading{
+    max-width: 850px;
+}
+.header .home .home_text{
+    margin: 40px 0 0 0;
+    max-width: 750px;
+    font-size: 1.3em;
+    line-height: 38px;
+}
+
+/* ----------------------------- you_will_learn ----------------------------- */
+.you_will_learn{
+
+}
+.you_will_learn .you_will_learn_contant {
+    text-align: center;
+}
+
+.you_will_learn_contant_blocks {
+    margin: 65px 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.you_will_learn_contant_block {
+    margin: 10px;
+    max-width: 350px;
+    transition: 0.4s ease;
+}
+.you_will_learn_contant_block:hover{
+    transform: translateY(-7px) ;
+}
+.you_will_learn_contant_block p{
+    
+    font-size: 1.25em;
+}
+
+
+
+
+
+
+
+
+/* --------------------------------- footer --------------------------------- */
+.footer{
+    margin: 170px 0 0 0;
+}

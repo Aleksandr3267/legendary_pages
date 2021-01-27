@@ -1,0 +1,76 @@
+/* --------------------------------- header --------------------------------- */
+.header{
+    background:url(../img/bg_cooking.png) no-repeat center top / cover;
+}
+.header .home{
+    margin: 120px 0 0 0;
+}
+.header .home .heading{
+    max-width: 905px;
+    color:white;
+}
+.header .home .home_text{
+    margin: 40px 0 0 0;
+    max-width: 570px;
+    color: white;
+    font-size: 1.25em;
+    line-height: 38px;
+}
+
+/* ------------------------------ cooking_text ------------------------------ */
+.cooking_text{
+    margin: auto;
+    max-width: 800px;
+    text-align: center;
+}
+.cooking_text p{
+    font-size: 1.5em;
+    line-height: 45px;
+}
+
+
+/* ----------------------------- cooking_lessons ---------------------------- */
+.cooking_lessons{
+    margin: 110px 0 0 0;
+    text-align: center;
+}
+.cooking_lessons .cooking_lessons_contant{
+
+}
+.cooking_lessons .cooking_lessons_contant h3{
+    font-size: 1.9em;
+    text-transform: uppercase;
+}
+.cooking_lessons .cooking_lessons_contant .cooking_lessons_contant_lessons{
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 85px 0 0 0;
+}
+.cooking_lessons .cooking_lessons_contant .cooking_lessons_contant_lessons .cooking_lesson{
+    max-width: 560px;
+    min-width: 300px;
+    box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    margin: 10px;
+    transition: 0.4s ease;
+}
+.cooking_lessons .cooking_lessons_contant .cooking_lessons_contant_lessons .cooking_lesson:hover{
+    transform: translateY(-7px) translateX(-7px);
+    box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.35);
+}
+.cooking_lessons .cooking_lessons_contant .cooking_lessons_contant_lessons .cooking_lesson p{
+    font-size: 1.9em;
+    text-transform: uppercase;
+    padding: 50px 0;
+    font-weight: 600;
+}
+
+
+/* --------------------------------- footer --------------------------------- */
+.footer{
+    margin: 125px 0 0 0;
+}

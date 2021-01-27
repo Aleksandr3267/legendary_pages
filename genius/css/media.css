@@ -1,0 +1,154 @@
+
+/* ---------------------------- header and footer --------------------------- */
+@media(max-width:1180px){
+    /* burger */
+    .burder_menu{
+        display: block;
+        position: fixed;
+    }
+    body.lock{
+		overflow: hidden;
+		z-index: 1000;
+	}
+    /* menu id */
+    #main-menu{
+        position: fixed;
+        background: rgba(0,0,0,0.9);
+        padding: 150px 0 50px 0;
+        top: -30px;
+        left: -100%;
+        transition: 0.4s ease 0s;
+        overflow:hidden auto;
+        width: 100%;
+        height: 110%;
+        z-index: 10000;
+    }
+    #main-menu.active{
+        left: 0;
+    }
+    nav .nav_bar .menu{
+        display: block;
+    }
+    #main-menu li .link{
+        display: inline-block;
+        font-size: 1.8em;
+        margin: 5% 60px;
+    }
+}
+@media(max-width:700px){
+    .heading{
+        font-size: 2.6em;
+    }
+}
+@media(max-width:500px){
+    .heading{
+        font-size: 2.1em;
+    }
+}
+
+
+/* ----------------------------------- car ---------------------------------- */
+@media(max-width:1180px){
+    .we_offer_content_categories{
+        grid-template-columns: 1fr 1fr ;
+    }
+}
+@media(max-width:800px){
+    .we_offer_content_categories{
+        grid-template-columns: 1fr ;
+    }
+}
+@media(max-width:500px){
+    .we_offer_content_heading img{
+        display: none;
+    }
+}
+
+
+
+
+
+
+/* -------------------------------- languages ------------------------------- */
+@media(max-width:500px){
+    .technique_content h2{
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 1.5em
+    }
+    .technique_content .technique_blocks .technique_block:hover{
+        transform: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------- OPT ---------------------------------- */
+@media(max-width:600px){
+    .preparation_tests{
+        grid-template-columns: 1fr ;
+    }
+    .preparation_contant_tests{
+        display: flex;
+    }
+}
+@media(max-width:500px){
+    .header .OPT .heading{
+        font-size: 1.5em;
+        
+    }
+    .preparation_contant .timetable h2{
+        font-size: 1.5em;
+        max-width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+/* --------------------------------- cooking -------------------------------- */
+
+
+@media(max-width:600px){
+    .cooking_lessons .cooking_lessons_contant .cooking_lessons_contant_lessons .cooking_lesson:hover{
+        transform: none;
+    }
+}
+@media(max-width:500px){
+    .cooking_lessons .cooking_lessons_contant .cooking_lessons_contant_lessons .cooking_lesson p{
+        font-size: 1.1em;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* -------------------------------- medicine -------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------- hairdresser ------------------------------ */
