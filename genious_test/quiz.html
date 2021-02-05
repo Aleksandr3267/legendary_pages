@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="quiz-app">
+      <!-- quiz-info -->
+      <div class="quiz-info">
+        <!-- <div class="category">Category: <span>HTML</span></div> -->
+        <div class="questionBox" id="questionBox">Вопрос <span>1</span> из 20</div>
+        <div class="text_score">Балы за вопрос: 1</div>
+        <div class="count"><span></span></div>
+        <div class="count_points">Набрано балов: <span>0</span></div>
+        <div class="timerBox" id="timer">Время : <span>25:00</span></div>
+        <div class="questions_choice"></div>
+      </div>
+      <!-- quiz-area -->
+      <div class="quiz-area"></div>
+      <!-- answers-area -->
+      <div class="answers-area unselectable"></div>
+      <button class="submit-button">Отправить</button>
+      <div class="bullets">
+        <div class="spans"></div>
+        <div class="countdown"></div>
+      </div>
+      <div class="results unselectable"></div>
+
+      <div id="bad_answer" style="display: none;">
+        <h2>Туура эмес</h2>
+        <div class="unselectable" id="but"><p>Продолжить</p></div>
+      </div>
+      <div id="good_answer" style="display: none;">
+        <h2>Туура</h2>
+        <div class="unselectable" id="but_good"><p>Продолжить</p></div>
+      </div>
+
+    </div>
+
+
+
+    <script src="./jquery-3.5.1.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
