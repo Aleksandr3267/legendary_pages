@@ -20,6 +20,12 @@
     font-size: 1.3em;
   }
 /* ----------------------------- for index.html ----------------------------- */
+.wrapper{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items:center;
+}
 .wrapper .quiz-app {
   margin: 100px 0;
   text-align: center;

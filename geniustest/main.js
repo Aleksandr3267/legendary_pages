@@ -56,6 +56,7 @@ function getQuestions() {
         countdown(3, qCount);
         // Show Results
         showResults(qCount);
+        submitButton.style.display = 'none';
       };
     }
   };
@@ -152,11 +153,13 @@ function checkAnswer(rAnswer, count) {
 $(document).ready(function() {
   $('#but').on('click', function() {
     document.getElementById("bad_answer").style.display = 'none';
+    submitButton.style.display = 'block';
   });
 });
 $(document).ready(function() {
   $('#but_good').on('click', function() {
     document.getElementById("good_answer").style.display = 'none';
+    submitButton.style.display = 'block';
   });
 });
 
