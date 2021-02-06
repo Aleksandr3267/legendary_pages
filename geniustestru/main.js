@@ -37,7 +37,6 @@ function getQuestions() {
           $(".questionBox span").text(curnum);
         // это конец счётов вопроса
 
-
         // Get Right Answer
         let theRightAnswer = questionsObject[currentIndex].right_answer;
         // Increase Index
@@ -70,6 +69,7 @@ getQuestions();
 /* ------------------------------ createBullets ----------------------------- */
 function createBullets(num) {
   countSpan.innerHTML = num;
+  
   // Create Spans
   for (let i = 0; i < num; i++) {
     
@@ -87,6 +87,8 @@ function createBullets(num) {
 
 function addQuestionData(obj, count) {
   if (currentIndex < count) {
+
+   
     
     // Create H2 Question Title
     let questionTitle = document.createElement("h2");
@@ -192,7 +194,7 @@ function showResults(count) {
     
 
     if (rightAnswers > count / 2 && rightAnswers < count) {
-      theResults = `<span class="good">Куттуктайбыз, сиз сынактан өтүңүз!</span><span class="results_test_text">Результат теста</span> <span class="your_points">Ваши баллы: ${rightAnswers} из ${count}</span><span class="passing_score">Проходной балл: 18 баллов</span>`;
+      theResults = `<span class="good">Поздравляю, вы сдали экзамен ! </span><span class="results_test_text">Результат теста</span> <span class="your_points">Ваши баллы: ${rightAnswers} из ${count}</span><span class="passing_score">Проходной балл: 18 баллов</span>`;
     } else if (rightAnswers === count) {
       theResults = `<span class="perfect">Perfect</span>, All Answers Is Good`;
     } else {
@@ -220,11 +222,11 @@ function showResTime(count) {
     bullets.remove();
 
     if (rightAnswers > count / 2 && rightAnswers < count) {
-      theResults = `<span class="good">Куттуктайбыз, сиз сынактан өтүңүз!</span><span class="results_test_text">Результат теста</span> <span class="your_points">Ваши баллы: ${rightAnswers} из 20</span><span class="passing_score">Проходной балл: 18 баллов</span>`;
+      theResults = `<span class="good">Поздравляю, вы сдали экзамен ! </span><span class="results_test_text">Результат теста</span> <span class="your_points">Ваши баллы: ${rightAnswers} из ${count}</span><span class="passing_score">Проходной балл: 18 баллов</span>`;
     } else if (rightAnswers === count) {
       theResults = `<span class="perfect">Perfect</span>, All Answers Is Good`;
     } else {
-      theResults = `<span class="bad">Сиз сынактан өткөн жоксуз :(</span><span class="results_test_text">Результат теста</span> <span class="your_points">Ваши баллы: ${rightAnswers} из 20</span> <span class="passing_score">Проходной балл: 18 баллов</span>`;
+      theResults = `<span class="bad">Вы не прошли тест :(</span><span class="results_test_text">Результат теста</span> <span class="your_points">Ваши баллы: ${rightAnswers} из ${count}</span> <span class="passing_score">Проходной балл: 18 баллов</span>`;
     }
 
     resultsContainer.innerHTML = theResults;
