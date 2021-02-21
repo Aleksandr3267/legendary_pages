@@ -51,12 +51,12 @@ body.lock{
     overflow: hidden;
     z-index: 1000;
 }
-.button_exit{
+.main-content .button_exit{
     position: relative;
     width: 50px;
     transition: 0.3s ease;
 }
-.button_exit::after, .button_exit::before{
+.main-content .button_exit::after, .main-content .button_exit::before{
     content: "";
     position:absolute;
     width: 100%;
@@ -67,52 +67,52 @@ body.lock{
     left: 0px;
     border-radius:5px;
 }
-.button_exit::before{
+.main-content .button_exit::before{
     background: linear-gradient(180deg, #FFB800 0%, #DF8600 100%), #C4C4C4;
     transform: rotate(-45deg);
 }
-.button_exit:hover{
+.main-content .button_exit:hover{
     opacity: 0.4;
 }
 /* forma */
-.obratnuj-zvonok{
+.main-content .obratnuj-zvonok{
 	width: 100%;
 	max-width: 350px;
     color: white;
     margin: auto 0 ;
 
 }
-.form-zvonok{
+.main-content .form-zvonok{
 	width: 100%;
 	display: flex;
 	flex-direction: column;
 	padding: 0 20px;
 	box-sizing: border-box;
 }
-.form-zvonok div{
+.main-content .form-zvonok div{
 	padding: 15px 0;
 }
-.bot-send-mail{
+.main-content .bot-send-mail{
 	box-sizing: border-box;
 	width: 100%;
 }
-.form-zvonok label,.form-zvonok input{
+.main-content .form-zvonok label,.main-content .form-zvonok input{
     display: block;
     width: 100%;
     box-sizing: border-box;
 }
-.form-zvonok label{
+.main-content .form-zvonok label{
 	margin-bottom: 5px;
 	font-weight: bold;
 }
-.form-zvonok input{
+.main-content .form-zvonok input{
 	padding: 10px 15px;
 	margin-top: 10px;
 }
-.form-zvonok label span{
+.main-content .form-zvonok label span{
 	color: red;
 }
-.form-zvonok .bot-send-mail{
+.main-content .form-zvonok .bot-send-mail{
 	padding: 15px;
 	margin-top: 10px;
     background: none;
@@ -126,7 +126,7 @@ body.lock{
     transition: 0.5s ease;
     overflow: hidden;
 }
-.form-zvonok textarea{
+.main-content .form-zvonok textarea{
     max-width: 100%;
     max-height: 250px;
 }
@@ -306,7 +306,7 @@ nav .nav_contact a i, .footer_buttons a i{
     position: relative;
     overflow: hidden;
 }
-.form-zvonok .bot-send-mail::after, .home .container .home_buttons a::after, .home .container .home_buttons button::after, .home_submit::after{
+.main-content .form-zvonok .bot-send-mail::after, .home .container .home_buttons a::after, .home .container .home_buttons button::after, .home_submit::after{
     content:"";
     position: absolute;
     display:block;
@@ -317,7 +317,7 @@ nav .nav_contact a i, .footer_buttons a i{
     transform: rotate(-45deg);
     transition: 0.5s ease;
 }
-.form-zvonok .bot-send-mail:hover::after, .home .container .home_buttons a:hover::after, .home .container .home_buttons button:hover::after, .home_submit:hover::after{
+.main-content .form-zvonok .bot-send-mail:hover::after, .home .container .home_buttons a:hover::after, .home .container .home_buttons button:hover::after, .home_submit:hover::after{
     left: 100%;
 }
 .home .container .home_buttons a i, .home .container .home_buttons button i, .home_submit i{

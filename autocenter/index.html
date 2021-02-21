@@ -23,15 +23,15 @@
                     <div class=" button_exit"></div>
                         <div>
                             <label for="name">Имя:</label>
-                            <input type="text" name="name" placeholder="Введите ваше имя" required />
+                            <input id="name" type="text" name="name" placeholder="Введите ваше имя" required />
                         </div>
                         <div>
                             <label for="tel">Телефон:</label>
-                            <input type="tel" name="tel" placeholder="Введите номер телефона" required />
+                            <input id="tel" type="tel" name="tel" placeholder="Введите номер телефона" required />
                         </div>
                         <div>
                             <label for="message">Текст сообщения:</label>
-                            <textarea name="message" cols="40" rows="6"></textarea>
+                            <textarea id="message" name="message" cols="40" rows="6"></textarea>
                         </div>
                         <input name="bezspama" type="text" style="display:none" value="" />
                     <button class="bot-send-mail submit" type="submit">Оставить заявку</button>
@@ -268,7 +268,7 @@
             </div>
         </section>
 
-        <!-- ------------------------------- footer -------------------------------- -->
+        <!-- ------------------------------- for footer -------------------------------- -->
         <footer class="footer">
             <div class="container">
                 <!-- nav -->
@@ -292,7 +292,7 @@
 
     </div>
 
-    <!-- ------------------------------- scripts ------------------------------- -->
+    <!-- ------------------------------- for scripts ------------------------------- -->
     <script src="./js/jquery-3.5.1.js"></script>
     <script src="./js/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
