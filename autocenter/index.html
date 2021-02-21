@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Автоцентер прадо</title>
+
+    <!-- -------------------------------- links -------------------------------- -->
+    <link rel="shortcut icon" href="#" type="image/png">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/car.css">
+    <link rel="stylesheet" href="css/media.css">
+    
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- ------------------------------- header -------------------------------- -->
+        <header class="header">
+            <div class="container">
+                <!-- nav -->
+                <nav class="nav">
+                    <!-- logo -->
+                    <div class="logo">
+                        <p>Автоцентр</p>
+                        <p>"прадо"</p>
+                    </div>
+                    <!-- nav_bar -->
+                    <div class="nav_bar">
+                        <!-- burger -->
+                        <div class="burder_menu">
+                            <span></span>
+                        </div>
+                        <!-- menu -->
+                        <ul id="main-menu" class="menu">
+                            <li><a href="#about_us" class="link">О нас</a></li>
+                            <li><a href="#our_services" class="link">Услуги</a></li>
+                            <li><a href="#our_advantages" class="link">Прайс лист</a></li>
+                            <li><a href="#photo_gallery" class="link">Галерея</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav_contact">
+                        <p><i class="fas fa-map-marker-alt"></i>г. Саратов</p>
+                        <a href="#"><i class="fas fa-phone-alt"></i>+7 (906) 311-37-59</a>
+                    </div>
+                </nav>
+            </div>    
+
+            <!-- home -->
+            <div class="home">
+                <div class="container">
+                <!-- heading -->
+                <h1 class="header_heading heading">
+                    <span>Мы предлагаем </span> широкий спектр услуг по ремонту, обслуживанию и купли-продажи
+                    автомобилей
+                </h1>
+                <p class="home_text">На протяжении 5 лет мы успешно и стабильно развиваемся в сфере автомобильных
+                    услуг, выкупа, обмена и аренды автомобилей</p>
+                <div class="home_buttons">
+                    <a href="#"><i class="fab fa-whatsapp"></i>Написать в WhatsApp</a>
+                    <button class="home_submit"><i class="fas fa-envelope-open-text"></i>Оставить заявку</button>
+                </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- -------------------------------about_us-------------------------------- -->
+        <section id="about_us" class="about_us">
+            <div class="container">
+                <!-- about_us_content -->
+                <div class="about_us_content">
+                    <div class="about_us_content_text">
+                        <h2 class="heading">
+                            О нас
+                        </h2>
+                        <p>
+                            За время работы нашими постоянными клиентами стали более 2000 автолюбителей.
+                        </p>
+                        <p>
+                            Обращаясь к нам вы получаете полный пакет услуг. Предоставляем помощь в оформлении транспортного
+                            средства, подберем для вас автомобиль ниже рыночной стоимости, поможем продать или взять авто в
+                            аренду.
+                        </p>
+                    </div>
+                    <div class="about_us_content_img">
+                        <img src="./img/img_about_us.png" alt="car">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ------------------------------ our_services ------------------------------ -->
+        <section id="our_services" class="our_services">
+            <div class="container">
+                <div class="our_services_content">
+                    <!-- our_services_content_heading -->
+                    <div class="our_services_content_heading">
+                        <h2 class="heading">Наши услуги</h2>
+                    </div>
+                    <!-- our_services_content_categories -->
+                    <div class="our_services_content_categories">
+                        <div class="our_services_category">
+                            <img src="./img/servis1.png" alt="our_services">
+                            <p>
+                                Ремонт автомобиля 
+                            </p>
+                        </div>
+                        <div class="our_services_category">
+                            <img src="./img/servis2.png" alt="our_services">
+                            <p>
+                                Кузовные и малярные работы
+                            </p>
+                        </div>
+                        <div class="our_services_category">
+                            <img src="./img/servis3.png" alt="our_services">
+                            <p>
+                                Продажа автозапчастей
+                            </p>
+                        </div>
+                        <div class="our_services_category">
+                            <img src="./img/servis4.png" alt="our_services">
+                            <p>
+                                Выкуп автомобилей
+                            </p>
+                        </div>
+                        <div class="our_services_category">
+                            <img src="./img/servis5.png" alt="our_services">
+                            <p>
+                                Продажа автомобилей
+                            </p>
+                        </div>
+                        <div class="our_services_category">
+                            <img src="./img/servis6.png" alt="our_services">
+                            <p>
+                                Аренда автомобилей
+                            </p>
+                        </div>
+                    </div>
+                    <button class="home_submit"><i class="fas fa-envelope-open-text"></i>Оставить заявку</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ----------------------- information by category ----------------------- -->
+        <script>
+            $(function () {
+                var use_privacy = true;
+                $('#form1').on('submit', function (e) {
+        
+                    if (use_privacy) {
+                        if (!$(this).find('input[name=privacy]').prop('checked')) {
+                            alert('Для продолжения вы должны принять условия Пользовательского соглашения');
+                            return false;
+                        }
+                    }
+        
+                    //Тут код отправки формы
+                    document.write('Форма успешно отправлена!');
+        
+                    e.preventDefault();
+                });
+            });
+        </script>
+        <section id="our_advantages" class="our_advantages">
+            <div class="container">
+                <div class="our_advantages_content">
+                    <div class="our_advantages_content_text">
+                        <h2 class="heading">Наши преимущества</h2>
+                        <ul class="sp">
+                            <li>
+                                <span class="sp-curle">1</span> Всегда выгодные условия, наличный и безналичный рассчет.
+                            </li>
+                            <li>
+                                <span class="sp-curle">2</span>Гарантия на все выполненные работы
+                            </li>
+                            <li>
+                                <span class="sp-curle">3</span>Опыт работы более 5 лет
+                            </li>
+                            <li>
+                                <span class="sp-curle">4</span>Индивидуальный подход к каждому клиенту
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="our_advantages_content_form">
+                        <form id="form1" class="obratnuj-zvonok contact_form" action="contact-form.php" method="post">
+                            <div class="form-zvonok">
+                                <div class=" button_exit"></div>
+                                <p>
+                                    Если у вас есть вопросы, мы ответим
+                                    максимально подробно
+                                </p>
+                                <p>Связаться с менеджером</p>
+                                <div>
+                                    <input class="form_tel" type="tel" name="tel" placeholder="Введите ваш телефон" required />
+                                </div>
+                                <input name="bezspama" type="text" style="display:none" value="" />
+                                <button class="bot-send-mail submit" type="submit" name="submit">Отправить</button>
+                                <p class="privaci__block">
+                                    <input type="checkbox" name="privacy">
+                                    <a href="#" class="privaci" target="_blank">Я согласен на обработку моих персональных данных согласно условиям <span>политики конфиденциальности</span></a>
+                                </p>
+                            </div>
+                        </form>
+                        <a class="ints" href="#">Присоединяйтесь к нам в instagram <i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ---------------------------- photo_gallery ---------------------------- -->
+        <section id="photo_gallery" class="photo_gallery">
+            <div class="container">
+                <div class="photo_gallery_content">
+                    <h2 class="heading">Фотогалерея:</h2>
+                    <div class="photo_gallery_content_images">
+                        <!-- Slider main container -->
+                        <div class="image_slider swiper-container">
+                            <div class="image_slider_wrapper swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="image_slider_slide swiper-slide">
+                                    <div class="image-slider__image">
+                                        <img src="./img/slide1.png" alt="slide">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="image-slider__image">
+                                        <img src="./img/slide2.png" alt="slide">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="image-slider__image">
+                                        <img src="./img/slide3.png" alt="slide">
+                                    </div>
+                                </div>
+                                <div class="image_slider_slide swiper-slide">
+                                    <div class="image-slider__image">
+                                        <img src="./img/slide1.png" alt="slide">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="image-slider__image">
+                                        <img src="./img/slide2.png" alt="slide">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="image-slider__image">
+                                        <img src="./img/slide3.png" alt="slide">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination"></div>
+                            <!-- If we need navigation buttons -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                            <!-- If we need scrollbar -->
+                            <div class="swiper-scrollbar"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ------------------------------- footer -------------------------------- -->
+        <footer class="footer">
+            <div class="container">
+                <!-- nav -->
+                <div class="footer_contant">
+                    <!-- logo -->
+                    <div class="logo">
+                        <p>Автоцентр</p>
+                        <p>"прадо"</p>
+                    </div>
+                    <!-- nav_bar -->
+                    <div class="footer_location">
+                        <p><i class="fas fa-map-marker-alt"></i> г. Саратов  Усть-Курдюмская 1/1</p>
+                    </div>
+                    <div class="footer_buttons">
+                        <a href="#"><i class="fas fa-comment"></i> prado.saratov@mail.ru</a>
+                        <a href="#"><i class="fas fa-phone-alt"></i> +7 (906) 311-37-59</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- ------------------------------- scripts ------------------------------- -->
+    <script src="./js/jquery-3.5.1.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="https://kit.fontawesome.com/0f50a82545.js"></script>
+    
+</body>
+
+</html>
