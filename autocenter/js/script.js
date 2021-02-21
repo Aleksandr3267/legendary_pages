@@ -1,4 +1,18 @@
 'use strict';
+
+
+// forms
+$(document).ready(function () {
+    $('.home_submit').click(function (event) {
+        $('.home_submit, .main-content').toggleClass('active');
+        $('body').toggleClass('lock');
+    });
+});
+$('.button_exit').on('click', function(){
+    $('.home_submit, .main-content').toggleClass('active');
+    $('body').toggleClass('lock');
+});
+
 // якорь
 $(document).ready(function(){
     $("#main-menu").on("click","a", function (event) {

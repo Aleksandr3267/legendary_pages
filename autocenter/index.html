@@ -7,16 +7,38 @@
     <title>Автоцентер прадо</title>
 
     <!-- -------------------------------- links -------------------------------- -->
-    <link rel="shortcut icon" href="#" type="image/png">
     <link rel="stylesheet" href="./css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/car.css">
     <link rel="stylesheet" href="css/media.css">
     
 </head>
 
 <body>
     <div class="wrapper">
+
+        <!-- form -->
+        <div class="main-content">
+            <form class="obratnuj-zvonok contact_form" action="contact-form.php" method="post">
+                <div class="form-zvonok">
+                    <div class=" button_exit"></div>
+                        <div>
+                            <label for="name">Имя:</label>
+                            <input type="text" name="name" placeholder="Введите ваше имя" required />
+                        </div>
+                        <div>
+                            <label for="tel">Телефон:</label>
+                            <input type="tel" name="tel" placeholder="Введите номер телефона" required />
+                        </div>
+                        <div>
+                            <label for="message">Текст сообщения:</label>
+                            <textarea name="message" cols="40" rows="6"></textarea>
+                        </div>
+                        <input name="bezspama" type="text" style="display:none" value="" />
+                    <button class="bot-send-mail submit" type="submit">Оставить заявку</button>
+                </div>
+            </form>
+        </div>
+
         <!-- ------------------------------- header -------------------------------- -->
         <header class="header">
             <div class="container">
@@ -43,7 +65,7 @@
                     </div>
                     <div class="nav_contact">
                         <p><i class="fas fa-map-marker-alt"></i>г. Саратов</p>
-                        <a href="#"><i class="fas fa-phone-alt"></i>+7 (906) 311-37-59</a>
+                        <a href="https://api.whatsapp.com/send?phone=+79063113759"><i class="fas fa-phone-alt"></i>+7 (906) 311-37-59</a>
                     </div>
                 </nav>
             </div>    
@@ -59,7 +81,8 @@
                 <p class="home_text">На протяжении 5 лет мы успешно и стабильно развиваемся в сфере автомобильных
                     услуг, выкупа, обмена и аренды автомобилей</p>
                 <div class="home_buttons">
-                    <a href="#"><i class="fab fa-whatsapp"></i>Написать в WhatsApp</a>
+                    <a href="https://api.whatsapp.com/send?phone=+79063113759"><i class="fab fa-whatsapp"></i>Написать в WhatsApp</a>
+                    
                     <button class="home_submit"><i class="fas fa-envelope-open-text"></i>Оставить заявку</button>
                 </div>
                 </div>
@@ -144,25 +167,6 @@
         </section>
 
         <!-- ----------------------- information by category ----------------------- -->
-        <script>
-            $(function () {
-                var use_privacy = true;
-                $('#form1').on('submit', function (e) {
-        
-                    if (use_privacy) {
-                        if (!$(this).find('input[name=privacy]').prop('checked')) {
-                            alert('Для продолжения вы должны принять условия Пользовательского соглашения');
-                            return false;
-                        }
-                    }
-        
-                    //Тут код отправки формы
-                    document.write('Форма успешно отправлена!');
-        
-                    e.preventDefault();
-                });
-            });
-        </script>
         <section id="our_advantages" class="our_advantages">
             <div class="container">
                 <div class="our_advantages_content">
