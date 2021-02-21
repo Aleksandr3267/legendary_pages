@@ -269,7 +269,7 @@ nav .nav_contact a i, .footer_buttons a i{
 .home{
     text-align: center;
     padding: 232px 0 260px 0;
-    background: url(../img/bg_header.png) no-repeat center top / cover;
+    background: url(../img/bg_header.webp) no-repeat center top / cover;
 }
 .home .container{
     max-width: 820px;
@@ -537,7 +537,7 @@ nav .nav_contact a i, .footer_buttons a i{
 
 /* -------------------------- photo_gallery_slider -------------------------- */
 .photo_gallery{
-    background: url(../img/bg_galery.png) no-repeat center top / cover;
+    background: url(../img/bg_galery.webp) no-repeat center top / cover;
     padding: 70px 0 100px 0;
 }
 .photo_gallery_content{

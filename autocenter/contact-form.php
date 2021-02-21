@@ -7,7 +7,7 @@ $message = htmlspecialchars($_POST["message"]);
 $bezspama = htmlspecialchars($_POST["bezspama"]);
 
 /* Ваш адрес и тема сообщения */
-$address = "autocenter@inbox.ru";
+$address = "Prado.saratov@mail.ru";
 $sub = "Сообщение с сайта autocenter";
 
 /* Формат письма */
